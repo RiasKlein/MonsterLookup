@@ -9,6 +9,7 @@ This system provides dungeon masters with easy access to monster information; it
   - exit: exits the system
 * Just type in the name of the monster you are looking for and hit enter for the corresponding browser page to open up.
 * Certain functionalities are only provided in Google Chrome. Make sure that Google Chrome is your default browser.
+* The intended OS is Windows.
 
 ## Adding Monsters to the System
 
