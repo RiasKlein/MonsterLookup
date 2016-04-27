@@ -18,9 +18,11 @@ def readMonsterList ():
 		line = rfile.readline()		# Get a line from 'monster_list.txt'
 		if not line: return			# End the function if we're at the end
 
+		# Only add .html files because those contain the monster files
 		if ('.html' in line):
-			line = line.rstrip ('.html\n')			# Remove the ending from each line
-			monster_list.append (line.lower())		# Append as entry into the list of monsters
+			line = line.rstrip ('\n')			# Remove the trailing new line
+			line = line[:-5]					# Get rid of the .html
+			monster_list.append (line.lower())	# Append as entry into the list of monsters
 
 # handleBuiltIn
 #	Function handles the built-in functions	

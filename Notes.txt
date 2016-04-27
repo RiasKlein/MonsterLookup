@@ -1,0 +1,21 @@
+####################
+System Functionality
+####################
+ 
+The user's responsibility BEFORE using this system is to:
+	1. Populate the './Monsters' folder with the proper HTML files
+	2. Create an output file in ./Monsters with all the files in the directory
+	   - The command to use is: dir /b > monster_list.txt
+* The above instructions only have to be repeated if there has been a change in ./Monsters
+
+To use the system, either:
+	1. Use the command: python launcher.py
+	2. Double-click on 'launcher.py'
+
+####################
+	References
+####################
+
+Create output file containing all the files in a directory
+dir /b >[outputFile.txt]
+dir /b > monster_list.txt
