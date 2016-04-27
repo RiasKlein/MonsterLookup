@@ -1,2 +1,4 @@
+aarakocra.html
+aboleth.html
 monster_list.txt
 tiamat.html
