@@ -11,7 +11,11 @@ death tyrant.html
 deva.html
 flying sword.html
 monster_list.txt
+needle blight.html
 planetar.html
 rug of smothering.html
 solar.html
+spectator.html
 tiamat.html
+twig blight.html
+vine blight.html
