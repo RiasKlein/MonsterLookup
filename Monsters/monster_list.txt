@@ -3,6 +3,11 @@ aboleth.html
 animated armor.html
 ankheg.html
 azer.html
+banshee.html
+basilisk.html
+behir.html
+beholder.html
+death tyrant.html
 deva.html
 flying sword.html
 monster_list.txt
