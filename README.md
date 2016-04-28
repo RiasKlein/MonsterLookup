@@ -8,8 +8,11 @@ This system provides dungeon masters with easy access to monster information; it
   - help: prints out the version number of the system and a list of all available monster names 
   - exit: exits the system
 * Just type in the name of the monster you are looking for and hit enter for the corresponding browser page to open up.
+
+## Requirements
 * Certain functionalities are only provided in Google Chrome. Make sure that Google Chrome is your default browser.
-* The intended OS is Windows.
+* You must have Python 2.7 installed. Go here for the download: https://www.python.org/downloads/
+* The intended OS is Windows. Certain bugs may appear on UNIX systems.
 
 ## Adding Monsters to the System
 
