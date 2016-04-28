@@ -1,4 +1,12 @@
 aarakocra.html
 aboleth.html
+animated armor.html
+ankheg.html
+azer.html
+deva.html
+flying sword.html
 monster_list.txt
+planetar.html
+rug of smothering.html
+solar.html
 tiamat.html
