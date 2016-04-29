@@ -3,10 +3,23 @@ aboleth.html
 animated armor.html
 ankheg.html
 azer.html
+banshee.html
+basilisk.html
+behir.html
+beholder.html
+bugbear chief.html
+bugbear.html
+bulette.html
+bullywug.html
+death tyrant.html
 deva.html
 flying sword.html
 monster_list.txt
+needle blight.html
 planetar.html
 rug of smothering.html
 solar.html
+spectator.html
 tiamat.html
+twig blight.html
+vine blight.html

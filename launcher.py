@@ -4,7 +4,7 @@ import webbrowser
 
 # Configurable Global Settings
 file_monster_list = 'monster_list.txt'	# file with the monster HTML file names
-system_version = '0.1'
+system_version = '0.11'
 
 # readMonsterList
 #	Function reads the file monster_list.txt for all currently available monsters
@@ -37,6 +37,9 @@ def handleBuiltIn ( user_input ):
 		print (monster_list)
 		print ("")
 		print ("System Version: " + system_version)
+	# If the input was an empty string, then do nothing
+	elif (user_input.lower() == ""):
+		return True
 	# If the input was 'exit', then exit the system
 	elif (user_input.lower() == 'exit'):
 		print ("Exiting...")
