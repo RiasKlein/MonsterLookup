@@ -7,6 +7,10 @@ banshee.html
 basilisk.html
 behir.html
 beholder.html
+bugbear chief.html
+bugbear.html
+bulette.html
+bullywug.html
 death tyrant.html
 deva.html
 flying sword.html
