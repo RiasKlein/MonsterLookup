@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html><head><link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet" type="text/css"/><link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css"/><meta charset="utf-8"/>
+<title>Death Tyrant</title><style>
+      body {
+        margin: 0;
+      }
+
+      stat-block {
+        /* A bit of margin for presentation purposes, to show off the drop
+        shadow. */
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+    </style></head><body><template id="tapered-rule">
+  <style>
+    svg {
+      fill: #922610;
+      /* Stroke is necessary for good antialiasing in Chrome. */
+      stroke: #922610;
+      margin-top: 0.6em;
+      margin-bottom: 0.35em;
+    }
+  </style>
+  <svg height="5" width="400">
+    <polyline points="0,0 400,2.5 0,5"></polyline>
+  </svg>
+</template><script>
+(function(window, document) {
+  var elemName = 'tapered-rule';
+  var thatDoc = document;
+  var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
+  var proto = Object.create(HTMLElement.prototype, {
+    createdCallback: {
+      value: function() {
+        var template = thisDoc.getElementById(elemName);
+        var clone = thatDoc.importNode(template.content, true);
+        this.createShadowRoot().appendChild(clone);
+      }
+    }
+  });
+  thatDoc.registerElement(elemName, {prototype: proto});
+})(window, document);
+</script><template id="top-stats">
+  <style>
+    ::content * {
+      color: #7A200D;
+    }
+  </style>
+
+  <tapered-rule></tapered-rule>
+  <content></content>
+  <tapered-rule></tapered-rule>
+</template><script>
+(function(window, document) {
+  var elemName = 'top-stats';
+  var thatDoc = document;
+  var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
+  var proto = Object.create(HTMLElement.prototype, {
+    createdCallback: {
+      value: function() {
+        var template = thisDoc.getElementById(elemName);
+        var clone = thatDoc.importNode(template.content, true);
+        this.createShadowRoot().appendChild(clone);
+      }
+    }
+  });
+  thatDoc.registerElement(elemName, {prototype: proto});
+})(window, document);
+</script><template id="creature-heading">
+  <style>
+    ::content > h1 {
+      font-family: 'Libre Baskerville', 'Lora', 'Calisto MT',
+                   'Bookman Old Style', Bookman, 'Goudy Old Style',
+                   Garamond, 'Hoefler Text', 'Bitstream Charter',
+                   Georgia, serif;
+      color: #7A200D;
+      font-weight: 700;
+      margin: 0px;
+      font-size: 23px;
+      letter-spacing: 1px;
+      font-variant: small-caps;
+    }
+
+    ::content > h2 {
+      font-weight: normal;
+      font-style: italic;
+      font-size: 12px;
+      margin: 0;
+    }
+  </style>
+  <content select="h1"></content>
+  <content select="h2"></content>
+</template><script>
+(function(window, document) {
+  var elemName = 'creature-heading';
+  var thatDoc = document;
+  var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
+  var proto = Object.create(HTMLElement.prototype, {
+    createdCallback: {
+      value: function() {
+        var template = thisDoc.getElementById(elemName);
+        var clone = thatDoc.importNode(template.content, true);
+        this.createShadowRoot().appendChild(clone);
+      }
+    }
+  });
+  thatDoc.registerElement(elemName, {prototype: proto});
+})(window, document);
+</script><template id="abilities-block">
+  <style>
+    table {
+      width: 100%;
+      border: 0px;
+      border-collapse: collapse;
+    }
+    th, td {
+      width: 50px;
+      text-align: center;
+    }
+  </style>
+  <tapered-rule></tapered-rule>
+  <table>
+    <tbody><tr>
+      <th>STR</th>
+      <th>DEX</th>
+      <th>CON</th>
+      <th>INT</th>
+      <th>WIS</th>
+      <th>CHA</th>
+    </tr>
+    <tr>
+      <td id="str"></td>
+      <td id="dex"></td>
+      <td id="con"></td>
+      <td id="int"></td>
+      <td id="wis"></td>
+      <td id="cha"></td>
+    </tr>
+  </tbody></table>
+  <tapered-rule></tapered-rule>
+</template><script>
+(function(window, document) {
+  function abilityModifier(abilityScore) {
+    var score = parseInt(abilityScore, 10);
+    return Math.floor((score - 10) / 2);
+  }
+
+  function formattedModifier(abilityModifier) {
+    if (abilityModifier >= 0) {
+      return '+' + abilityModifier;
+    }
+    // This is an en dash, NOT a "normal" dash. The minus sign needs to be more visible.
+    return '–' + Math.abs(abilityModifier);
+  }
+
+  function abilityText(abilityScore) {
+    return [String(abilityScore),
+            ' (',
+            formattedModifier(abilityModifier(abilityScore)),
+            ')'].join('');
+  }
+
+  var elemName = 'abilities-block';
+  var thatDoc = document;
+  var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
+  var proto = Object.create(HTMLElement.prototype, {
+    createdCallback: {
+      value: function() {
+        var template = thisDoc.getElementById(elemName);
+        var clone = thatDoc.importNode(template.content, true);
+        var root = this.createShadowRoot().appendChild(clone);
+      }
+    },
+    attachedCallback: {
+      value: function() {
+        var root = this.shadowRoot;
+        for (var i = 0; i < this.attributes.length; i++) {
+          var attribute = this.attributes[i];
+          var abilityShortName = attribute.name.split('-')[1];
+          root.getElementById(abilityShortName).textContent =
+             abilityText(attribute.value);
+        }
+
+      }
+    }
+  });
+  thatDoc.registerElement(elemName, {prototype: proto});
+})(window, document);
+</script><template id="property-block">
+  <style>
+    :host {
+      margin-top: 0.3em;
+      margin-bottom: 0.9em;
+      line-height: 1.5;
+      display: block;
+    }
+
+    ::content > h4 {
+      margin: 0;
+      display: inline;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    ::content > p:first-of-type {
+      display: inline;
+      text-indent: 0;
+    }
+
+    ::content > p {
+      text-indent: 1em;
+      margin: 0;
+    }
+  </style>
+  <content></content>
+</template><script>
+(function(window, document) {
+  var elemName = 'property-block';
+  var thatDoc = document;
+  var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
+  var proto = Object.create(HTMLElement.prototype, {
+    createdCallback: {
+      value: function() {
+        var template = thisDoc.getElementById(elemName);
+        var clone = thatDoc.importNode(template.content, true);
+        this.createShadowRoot().appendChild(clone);
+      }
+    }
+  });
+  thatDoc.registerElement(elemName, {prototype: proto});
+})(window, document);
+</script><template id="property-line">
+  <style>
+    :host {
+      line-height: 1.4;
+      display: block;
+      text-indent: -1em;
+      padding-left: 1em;
+    }
+
+    ::content > h4 {
+      margin: 0;
+      display: inline;
+      font-weight: bold;
+    }
+
+    ::content > p:first-of-type {
+      display: inline;
+      text-indent: 0;
+    }
+
+    ::content > p {
+      text-indent: 1em;
+      margin: 0;
+    }
+  </style>
+  <content></content>
+</template><script>
+(function(window, document) {
+  var elemName = 'property-line';
+  var thatDoc = document;
+  var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
+  var proto = Object.create(HTMLElement.prototype, {
+    createdCallback: {
+      value: function() {
+        var template = thisDoc.getElementById(elemName);
+        var clone = thatDoc.importNode(template.content, true);
+        this.createShadowRoot().appendChild(clone);
+      }
+    }
+  });
+  thatDoc.registerElement(elemName, {prototype: proto});
+})(window, document);
+</script><template id="stat-block">
+  <style>
+    .bar {
+      height: 5px;
+      background: #E69A28;
+      border: 1px solid #000;
+      position: relative;
+      z-index: 1;
+    }
+
+    :host {
+      display: inline-block;
+    }
+
+    #content-wrap {
+      font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial,
+                    sans-serif;
+      font-size: 13.5px;
+      background: #FDF1DC;
+      padding: 0.6em;
+      padding-bottom: 0.5em;
+      border: 1px #DDD solid;
+      box-shadow: 0 0 1.5em #867453;
+
+      /* We don't want the box-shadow in front of the bar divs. */
+      position: relative;
+      z-index: 0;
+
+      /* Leaving room for the two bars to protrude outwards */
+      margin-left: 2px;
+      margin-right: 2px;
+
+      /* This is possibly overriden by next CSS rule. */
+      width: 400px;
+
+      -webkit-columns: 400px;
+         -moz-columns: 400px;
+              columns: 400px;
+      -webkit-column-gap: 40px;
+         -moz-column-gap: 40px;
+              column-gap: 40px;
+    }
+
+    :host([data-two-column]) #content-wrap {
+      /* One column is 400px and the gap between them is 40px. */
+      width: 840px;
+    }
+
+    ::content > h3 {
+      border-bottom: 1px solid #7A200D;
+      color: #7A200D;
+      font-size: 21px;
+      font-variant: small-caps;
+      font-weight: normal;
+      letter-spacing: 1px;
+      margin: 0;
+      margin-bottom: 0.3em;
+
+      break-before: column;
+      break-inside: avoid-column;
+      break-after: avoid-column;
+    }
+
+    /* For user-level p elems. */
+    ::content > p {
+      margin-top: 0.3em;
+      margin-bottom: 0.9em;
+      line-height: 1.5;
+    }
+
+    /* Last child shouldn't have bottom margin, too much white space. */
+    ::content > *:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+  <div class="bar"></div>
+  <div id="content-wrap">
+    <content></content>
+  </div>
+  <div class="bar"></div>
+</template><script>
+(function(window, document) {
+  var elemName = 'stat-block';
+  var thatDoc = document;
+  var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
+  var proto = Object.create(HTMLElement.prototype, {
+    createdCallback: {
+      value: function() {
+        var template = thisDoc.getElementById(elemName);
+        if (this.hasAttribute('data-content-height')) {
+          var wrap = template.content.getElementById('content-wrap');
+          wrap.style.height = this.getAttribute('data-content-height') + 'px';
+        }
+        var clone = thatDoc.importNode(template.content, true);
+        this.createShadowRoot().appendChild(clone);
+      }
+    }
+  });
+  thatDoc.registerElement(elemName, {prototype: proto});
+})(window, document);
+</script>
+  
+<stat-block>
+    <creature-heading>
+      <h1>Death Tyrant
+	  </h1>
+      <h2>
+	  Large undead, lawful evil 
+	  </h2>
+    </creature-heading>
+
+    <top-stats>
+      <property-line>
+        <h4>Armor Class</h4>
+        <p>
+		19 (natural armor) 
+		</p>
+      </property-line>
+	  
+      <property-line>
+        <h4>Hit Points</h4>
+        <p>
+		187 (25d10 +50) 
+		</p>
+      </property-line>
+	  
+      <property-line>
+        <h4>Speed</h4>
+        <p>
+		0 ft., fly 20 ft. (hover) 
+		</p>
+      </property-line>
+
+      <abilities-block data-str="10" data-dex="14" data-con="14" data-int="19" data-wis="15" data-cha="19" ></abilities-block>
+	  
+	  <property-line>
+        <h4>Saving Throws</h4>
+        <p>
+		Str +5, Con +7, lnt +9, Wis +7, Cha +9  
+		</p>
+      </property-line>
+		  
+      <property-line>
+        <h4>Skills</h4>
+        <p>
+		Perception +12 
+		</p>
+      </property-line>
+	  
+	  <!--
+	  <property-line>
+        <h4>Damage Resistances</h4>
+        <p>
+		radiant; bludgeoning, piercing, and slashing from nonmagical weapons  
+		</p>
+      </property-line>
+	  -->
+	  
+	  <property-line>
+        <h4>Damage Immunities </h4>
+        <p>
+		poison
+		</p>
+      </property-line>
+	  
+	  <property-line>
+        <h4>Condition Immunities </h4>
+        <p>
+		charmed, exhaustion, paralyzed, petrified, poisoned, prone   
+		</p>
+      </property-line>
+
+      <property-line>
+        <h4>Senses</h4>
+		<p>
+		darkvision 120 ft., passive Perception 22 
+		</p>
+      </property-line>
+	  
+      <property-line>
+        <h4>Languages</h4>
+        <p> 
+		Deep Speech, Undercommon 
+		</p>
+      </property-line>
+	  
+      <property-line>
+        <h4>Challenge</h4>
+        <p> 
+		14 (11,500 XP) 
+		</p>
+      </property-line>
+    </top-stats>
+
+	<property-block>
+		<h4> Negative Energy Cone. 
+		</h4>
+		<p> The death tyrant's central eye emits an invisible, magical 150-foot cone of negative energy. 
+			At the start of each of its turns, the tyrant decides which way the cone faces and whether the cone is active. 
+		</p>
+		<p>	Any creature in that area can't regain hit points. Any humanoid that dies there becomes a zombie under the 
+			tyrant's command. The dead humanoid retains its place in the initiative order and animates at the start of its 
+			next turn, provided that its body hasn't been completely destroyed. 
+		</p>
+    </property-block>
+	
+    <h3>Actions</h3>
+	
+    <property-block>
+		<h4> Bite. 
+		</h4>
+		<p><i>Melee Weapon Attack:</i> +5 to hit, reach 5 ft., one target. 
+        <i>Hit:</i> 14 (4d6) piercing damage. 
+		</p>
+    </property-block>
+	
+	<property-block>
+		<h4> Eye Rays. 
+		</h4>
+		<p>	The death tyrant shoots three of the following magical eye rays at random (reroll duplicates), 
+			choosing one to three targets it can see within 120 feet of it: 
+		</p>
+		<p>	1. <i>Charm Ray.</i> The targeted creature must succeed on a DC 17 Wisdom saving throw or be charmed by the tyrant 
+			for 1 hour, or until the beholder harms the creature. 	
+		</p>
+		<p>	2. <i>Paralyzing Ray.</i> The targeted creature must succeed on a DC 17 Constitution saving throw or be 
+			paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending 
+			the effect on itself on a success. 
+		</p>
+		<p> 3. <i>Fear Ray.</i> The targeted creature must succeed on a DC 17 Wisdom saving throw or be frightened for 1 minute. 
+			The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. 
+		</p>
+		<p>	4. <i>Slowing Ray.</i> The targeted creature must succeed on a DC 17 Dexterity saving throw. On a failed save, the 
+			target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either 
+			an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each 
+			of its turns, ending the effect on itself on a success. 
+		</p>
+		<p>	5. <i>Enervation Ray.</i> The targeted creature must make a DC 17 Constitution saving throw, taking 36 (8d8) necrotic 
+			damage on a failed save, or half as much damage on a successful one. 
+		</p>
+		<p>	6. <i>Telekinetic Ray.</i> If the target is a creature, it must succeed on a DC 17 Strength saving throw or the 
+			tyrant moves it up to 30 feet in any direction. The target is restrained by the ray's telekinetic grip until the 
+			start of the tyrant's next turn or until the tyrant is incapacitated. If the target is an object weighing 300 pounds 
+			or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The tyrant can also exert 
+			fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.  
+		</p>
+		<p>	7. <i>Sleep Ray.</i> The targeted creature must succeed on a DC 17 Wisdom saving throw or fall asleep and remain 
+			unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. 
+			This ray has no effect on constructs and undead. 
+		</p>
+		<p>	8. <i>Petrification Ray.</i> The targeted creature must make a DC 17 Dexterity saving throw. On a failed save, 
+			the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its 
+			next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the greater 
+			restoration spell or other magic. 
+		</p>
+		<p>	9. <i>Disintegration Ray.</i> If the target is a creature, it must succeed on a DC 17 Dexterity saving throw or take 
+			45 (l0d8) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.
+			If the target is a Large or smaller non magical object or creation of magical force, it is disintegrated without a saving throw. 
+			If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it. 
+		</p>
+		<p>	10. <i>Death Ray.</i> The targeted creature must succeed on a DC 17 Dexterity saving throw or take 55 (10d10) 
+			necrotic damage. The target dies if the ray reduces it to 0 hit points. 
+		</p>
+    </property-block>
+		
+	<h3> Legendary Actions </h3>
+	
+	<property-block>
+		<p> The death tyrant can take 3 legendary actions, using the Eye Ray option below. It can take only one legendary action 
+			at a time and only at the end of another creature's turn. The tyrant regains spent legendary actions at the start of 
+			its turn. 
+		</p>
+    </property-block>
+	
+	<property-block>
+		<h4>Eye Ray. 
+		</h4>
+		<p> The death tyrant uses one random eye ray. 
+		</p>
+    </property-block>
+		
+  </stat-block></body></html>
