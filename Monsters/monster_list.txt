@@ -3,7 +3,9 @@ aboleth.html
 animated armor.html
 ankheg.html
 azer.html
+balor.html
 banshee.html
+barlgura.html
 basilisk.html
 behir.html
 beholder.html
@@ -11,9 +13,18 @@ bugbear chief.html
 bugbear.html
 bulette.html
 bullywug.html
+cambion.html
+carrion crawler.html
+chasme.html
+darkmantle.html
+death knight.html
 death tyrant.html
+demilich.html
 deva.html
+dretch.html
 flying sword.html
+glabrezu.html
+goristro.html
 monster_list.txt
 needle blight.html
 planetar.html
