@@ -149,7 +149,8 @@
     if (abilityModifier >= 0) {
       return '+' + abilityModifier;
     }
-    // This is an en dash, NOT a "normal" dash. The minus sign needs to be more visible.
+    // This is an en dash, NOT a "normal" dash. The minus sign needs to be more
+    // visible.
     return '–' + Math.abs(abilityModifier);
   }
 
@@ -312,6 +313,11 @@
       -webkit-column-gap: 40px;
          -moz-column-gap: 40px;
               column-gap: 40px;
+
+      /* When height is constrained, we want sequential filling of columns. */
+      -webkit-column-fill: auto;
+         -moz-column-fill: auto;
+              column-fill: auto;
     }
 
     :host([data-two-column]) #content-wrap {
@@ -329,7 +335,6 @@
       margin: 0;
       margin-bottom: 0.3em;
 
-      break-before: column;
       break-inside: avoid-column;
       break-after: avoid-column;
     }
@@ -360,6 +365,8 @@
     createdCallback: {
       value: function() {
         var template = thisDoc.getElementById(elemName);
+        // If the attr() CSS3 function were properly implemented, we wouldn't
+        // need this hack...
         if (this.hasAttribute('data-content-height')) {
           var wrap = template.content.getElementById('content-wrap');
           wrap.style.height = this.getAttribute('data-content-height') + 'px';
@@ -372,6 +379,9 @@
   thatDoc.registerElement(elemName, {prototype: proto});
 })(window, document);
 </script>
+
+
+
   
 <stat-block>
     <creature-heading>
