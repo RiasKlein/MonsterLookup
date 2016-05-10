@@ -25,12 +25,20 @@ dretch.html
 flying sword.html
 glabrezu.html
 goristro.html
+hezrou.html
+manes.html
+marilith.html
 monster_list.txt
+nalfeshnee.html
 needle blight.html
 planetar.html
+quasit.html
 rug of smothering.html
+shadow demon.html
 solar.html
 spectator.html
 tiamat.html
 twig blight.html
 vine blight.html
+vrock.html
+yochlol.html
