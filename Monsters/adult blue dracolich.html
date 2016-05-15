@@ -1,48 +1,6 @@
-################################################################################
-#
-#	gen.py
-#	A barebones D&D Monster Generator using statblock5e 
-#	HTML files are outputted for information input
-#
-#	Usage: python gen.py [monster name]
-#		If there is a space ine the monster name, for example: chain devil
-#		Use a period instead of space. That is: chain.devil 
-#	
-#	This generator is developed by Shunman Tse (RiasKlein)
-#		https://github.com/riasklein
-#	Statblock5e code is by Val Markovic (Valloric) 
-#		https://github.com/Valloric
-#
-################################################################################
-
-import sys
-
-# According to the usage instructions, the monster name is the second argument
-monster_name = sys.argv[1]				# Get the monster name from arguments
-
-# Convert periods to spaces
-monster_name = monster_name.replace ('.', ' ')
-
-# Capitalize the first letter of every word in monster name
-list = [word[0].upper() + word[1:] for word in monster_name.split()]
-monster_name = " ".join(list)
-
-# Now we must create a HTML file with that monster's name
-filew = open (monster_name.lower() + ".html", 'w')
-
-################################################################################
-# Writing the formatting code into the HTML file
-################################################################################
-
-filew.write(
-"""<!DOCTYPE html>
+<!DOCTYPE html>
 <html><head><link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet" type="text/css"/><link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css"/><meta charset="utf-8"/>
-<title>""")
-
-filew.write(monster_name)
-
-filew.write(
-"""</title><style>
+<title>Adult Blue Dracolich</title><style>
       body {
         margin: 0;
       }
@@ -417,23 +375,12 @@ filew.write(
   thatDoc.registerElement(elemName, {prototype: proto});
 })(window, document);
 </script>
-"""
-)
 
-################################################################################
-# Writing the monster stats into the file
-################################################################################
-
-filew.write("""
 <stat-block>
     <creature-heading>
-      <h1>""")
-
-filew.write(monster_name)
-
-filew.write("""</h1>
+      <h1>Adult Blue Dracolich</h1>
       <h2>
-	  
+	  Huge undead, lawful evil 
 	  </h2>
     </creature-heading>
 
@@ -441,103 +388,105 @@ filew.write("""</h1>
       <property-line>
         <h4>Armor Class</h4>
         <p> 
-		
+		19 (natural armor) 
 		</p>
       </property-line>
 	  
       <property-line>
         <h4>Hit Points</h4>
         <p> 
-		
+		225 (18d12 + 108) 
 		</p>
       </property-line>
 	  
       <property-line>
         <h4>Speed</h4>
         <p>
-		30 ft.
+		40 ft., burrow 30 ft., fly 80 ft. 
 		</p>
       </property-line>
 
-      <abilities-block data-str="1" data-dex="1" data-con="1" data-int="1" data-wis="1" data-cha="1" ></abilities-block>
+      <abilities-block data-str="25" data-dex="10" data-con="23" data-int="16" data-wis="15" data-cha="19" ></abilities-block>
 
 	  <property-line>
         <h4>Saving Throws</h4>
         <p>
-		
+		Dex +5, Con + 11, Wis +7, Cha +9 
 		</p>
       </property-line>
 
       <property-line>
         <h4>Skills</h4>
         <p>
-		
+		Perception +12, Stealth +5 
 		</p>
       </property-line>
 
 	  <property-line>
         <h4>Damage Resistances</h4>
         <p>
-		
+		necrotic
 		</p>
       </property-line>
 	  
 	  <property-line>
         <h4>Damage Immunities</h4>
         <p>
-		
+		lightning, poison 
 		</p>
       </property-line>
 	  
+	  <!--
 	  <property-line>
         <h4>Damage Vulnerabilities</h4>
         <p>
 		
 		</p>
       </property-line>
+	  -->
 
 	  <property-line>
         <h4>Condition Immunities</h4>
         <p>
-		
+		charmed, exhaustion, frightened, paralyzed, poisoned 
 		</p>
       </property-line>
 
       <property-line>
         <h4>Senses</h4>
 		<p>
-		
+		blindsight 60 ft., darkvision 120 ft., passive Perception 22 
 		</p>
       </property-line>
 	  
       <property-line>
         <h4>Languages</h4>
         <p>
-		
+		Common, Draconic 
 		</p>
       </property-line>
 	  
       <property-line>
         <h4>Challenge</h4>
         <p>
-		
+		17 (18,000 XP)
 		</p>
       </property-line>
     </top-stats>
 	
 	<property-block>
 		<h4>
-		
+		Legendary Resistance (3/Day). 
 		</h4>
-		<p>	
+		<p>	If the dracolich fails a saving throw, it can choose to succeed instead. 
 		</p>
     </property-block>
 	
 	<property-block>
 		<h4>
-		
+		Magic Resistance. 
 		</h4>
-		<p>	
+		<p>	The dracolich has advantage on saving throws against spells and other magical effects. 
 		</p>
     </property-block>
 		
@@ -545,31 +494,96 @@ filew.write("""</h1>
 	
 	<property-block>
 		<h4>
-		
+		Multiattack. 
 		</h4>
-		<p>	
+		<p>	The dracolich can use its Frightful Presence. It then makes three attacks: one with 
+		its bite and two with its claws.
 		</p>
     </property-block>
 	
 	<property-block>
 		<h4>
-		
+		Bite. 
 		</h4>
-		<p><i>Melee Weapon Attack:</i> 
-		<i>Hit:</i> 
+		<p><i>Melee Weapon Attack:</i> +12 to hit, reach 10 ft., one target. 
+		<i>Hit:</i> 18 (2d10 + 7) piercing damage plus 5 (1d10) lightning damage. 
 		</p>
     </property-block>
 	
 	<property-block>
 		<h4>
-		
+		Claw. 
 		</h4>
-		<p><i>Ranged Weapon Attack:</i> 
-		<i>Hit:</i> 
+		<p><i>Melee Weapon Attack:</i> +12 to hit, reach 5 ft., one target. 
+		<i>Hit:</i> 14 (2d6 + 7) slashing damage. 
+		</p>
+    </property-block>
+	
+	<property-block>
+		<h4>
+		Tail. 
+		</h4>
+		<p><i>Melee Weapon Attack:</i> +12 to hit, reach 15 ft., one target. 
+		<i>Hit:</i> 16 (2d8 + 7) bludgeoning damage. 
+		</p>
+    </property-block>
+	
+	<property-block>
+		<h4>
+		Frightful Presence. 
+		</h4>
+		<p>	Each creature of the dracolich's choice that is within 120 feet of the dracolich and 
+		aware of it must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. 
+		A creature can repeat the saving throw at the end of each of its turns, ending the 
+		effect on itself on a success. If a creature's saving throw is successful or the effect 
+		ends for it, the creature is immune to the dracolich's Frightful Presence for the next 24 hours. 
+		</p>
+    </property-block>
+	
+	<property-block>
+		<h4>
+		Lightning Breath (Recharge 5-6). 
+		</h4>
+		<p>	The dracolich exhales lightning in a 90-foot line that is 5 feet wide. 
+		Each creature in that line must make a DC 20 Dexterity saving throw, taking 66 (12d10) 
+		lightning damage on a failed save, or half as much damage on a successful one. 
+		</p>
+    </property-block>
+	
+	<h3>Legendary Actions</h3>
+	
+	<property-block>
+		<p>	The dracolich can take 3 legendary actions, choosing from the options below. 
+		Only one legendary action option can be used at a time and only at the end of another 
+		creature's turn. The dracolich regains spent legendary actions at the start of its turn. 
+		</p>
+    </property-block>
+	
+	<property-block>
+		<h4>
+		Detect.
+		</h4>
+		<p>	The dracolich makes a Wisdom (Perception) check. 
+		</p>
+    </property-block>
+	
+	<property-block>
+		<h4>
+		Tail Attack.
+		</h4>
+		<p>	The dracolich makes a tail attack. 
+		</p>
+    </property-block>
+	
+	<property-block>
+		<h4>
+		Wing Attack (Costs 2 Actions). 
+		</h4>
+		<p>	The dracolich beats its tattered wings. 
+		Each creature within 10 feet of the dracolich must succeed on a DC 21 Dexterity 
+		saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. 
+		After beating its wings this way, the dracolich can fly up to half its flying speed. 
 		</p>
     </property-block>
 
   </stat-block></body></html>
-""")
-
-filew.close()		# Closing the opened file

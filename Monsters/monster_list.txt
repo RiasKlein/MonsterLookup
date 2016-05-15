@@ -1,44 +1,64 @@
 aarakocra.html
 aboleth.html
+adult blue dracolich.html
+allosaurus.html
 animated armor.html
 ankheg.html
+ankylosaurus.html
 azer.html
 balor.html
 banshee.html
+barbed devil.html
 barlgura.html
 basilisk.html
+bearded devil.html
 behir.html
 beholder.html
+bone devil.html
 bugbear chief.html
 bugbear.html
 bulette.html
 bullywug.html
 cambion.html
 carrion crawler.html
+chain devil.html
 chasme.html
 darkmantle.html
 death knight.html
 death tyrant.html
 demilich.html
 deva.html
+displacer beast.html
+doppelganger.html
 dretch.html
+erinyes.html
 flying sword.html
 glabrezu.html
 goristro.html
 hezrou.html
+horned devil.html
+ice devil.html
+imp.html
+lemure.html
 manes.html
 marilith.html
 monster_list.txt
 nalfeshnee.html
 needle blight.html
+pit fiend.html
 planetar.html
+plesiosaurus.html
+pteranodon.html
 quasit.html
 rug of smothering.html
 shadow demon.html
 solar.html
 spectator.html
+spined devil.html
 tiamat.html
+triceratops.html
 twig blight.html
+tyrannosaurus rex.html
 vine blight.html
 vrock.html
 yochlol.html
