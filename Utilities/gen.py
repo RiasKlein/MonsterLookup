@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 ################################################################################
 #
 #	gen.py
@@ -8,6 +5,8 @@
 #	HTML files are outputted for information input
 #
 #	Usage: python gen.py [monster name]
+#		If there is a space ine the monster name, for example: chain devil
+#		Use a period instead of space. That is: chain.devil 
 #	
 #	This generator is developed by Shunman Tse (RiasKlein)
 #		https://github.com/riasklein
@@ -20,6 +19,13 @@ import sys
 
 # According to the usage instructions, the monster name is the second argument
 monster_name = sys.argv[1]				# Get the monster name from arguments
+
+# Convert periods to spaces
+monster_name = monster_name.replace ('.', ' ')
+
+# Capitalize the first letter of every word in monster name
+list = [word[0].upper() + word[1:] for word in monster_name.split()]
+monster_name = " ".join(list)
 
 # Now we must create a HTML file with that monster's name
 filew = open (monster_name.lower() + ".html", 'w')
@@ -49,7 +55,6 @@ filew.write(
 	<style>
     svg {
       fill: #922610;
-
       stroke: #922610;
       margin-top: 0.6em;
       margin-bottom: 0.35em;
@@ -184,7 +189,7 @@ filew.write(
       return '+' + abilityModifier;
     }
     // This is an en dash, NOT a "normal" dash. The minus sign needs to be more visible.
-    return '–' + Math.abs(abilityModifier);
+    return unescape('%u2013') + Math.abs(abilityModifier);
   }
 
   function abilityText(abilityScore) {
@@ -426,8 +431,7 @@ filew.write("""
 
 filew.write(monster_name)
 
-filew.write("""
-	  </h1>
+filew.write("""</h1>
       <h2>
 	  
 	  </h2>
