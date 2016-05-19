@@ -13,9 +13,21 @@
 #	Statblock5e code is by Val Markovic (Valloric) 
 #		https://github.com/Valloric
 #
+#	Version 1.2
+#
 ################################################################################
 
 import sys
+
+# print_usage_instructions
+#	Function prints the usage instructions
+def print_usage_instructions ():
+	print ("Correct Usage:\tpython gen.py [monster name]")
+
+if len(sys.argv) < 2:
+	print ("Usage Error:\tThe program needs a monster name.")
+	print_usage_instructions()
+	sys.exit()
 
 # According to the usage instructions, the monster name is the second argument
 monster_name = sys.argv[1]				# Get the monster name from arguments
