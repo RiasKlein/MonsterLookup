@@ -11,7 +11,7 @@
 #	Statblock5e code is by Val Markovic (Valloric) 
 #		https://github.com/Valloric
 #
-#	Version 0.1
+#	Version 0.2
 #
 ################################################################################
 
@@ -22,14 +22,14 @@ import sys
 def print_usage_instructions ():
 	print ("Correct Usage:\tpython genFormatting.py [monster name]")
 	
-def genFormatting():
+def genFormatting( monster_name ):
 	if len(sys.argv) < 2:
 		print ("Usage Error: genFormatting.py cannot run properly")
 		print_usage_instructions()
 		sys.exit()
 
 	# According to the usage instructions, the monster name is the second argument
-	monster_name = sys.argv[1]				# Get the monster name from arguments
+	#monster_name = sys.argv[1]				# Get the monster name from arguments
 
 	# Convert periods to spaces
 	monster_name = monster_name.replace ('.', ' ')
@@ -53,137 +53,123 @@ def genFormatting():
 	wfile.write(monster_name)
 
 	wfile.write(
-"""</title>
-<style>
-	body {
-		margin: 0;
-	}
+"""</title><style>
+      body {
+        margin: 0;
+      }
 
-	stat-block {
-		margin-left: 20px;
-		margin-top: 20px;
-	}
-</style></head>
-
-<body><template id="tapered-rule">
+      stat-block {
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+    </style></head><body><template id="tapered-rule">
 	<style>
-		svg {
-			fill: #922610;
-			stroke: #922610;
-			margin-top: 0.6em;
-			margin-bottom: 0.35em;
-		}
-	</style>
-	<svg height="5" width="400">
-		<polyline points="0,0 400,2.5 0,5"></polyline>
-	</svg>
-</template>
-
-<script>
+    svg {
+      fill: #922610;
+      stroke: #922610;
+      margin-top: 0.6em;
+      margin-bottom: 0.35em;
+    }
+  </style>
+  <svg height="5" width="400">
+    <polyline points="0,0 400,2.5 0,5"></polyline>
+  </svg>
+</template><script>
 (function(window, document) {
-	var elemName = 'tapered-rule';
-	var thatDoc = document;
-	var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
-	var proto = Object.create(HTMLElement.prototype, {
-		createdCallback: {
-			value: function() {
-				var template = thisDoc.getElementById(elemName);
-				var clone = thatDoc.importNode(template.content, true);
-				this.createShadowRoot().appendChild(clone);
-			}
-		}
-	});
-	thatDoc.registerElement(elemName, {prototype: proto});
+  var elemName = 'tapered-rule';
+  var thatDoc = document;
+  var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
+  var proto = Object.create(HTMLElement.prototype, {
+    createdCallback: {
+      value: function() {
+        var template = thisDoc.getElementById(elemName);
+        var clone = thatDoc.importNode(template.content, true);
+        this.createShadowRoot().appendChild(clone);
+      }
+    }
+  });
+  thatDoc.registerElement(elemName, {prototype: proto});
 })(window, document);
-</script>
+</script><template id="top-stats">
+  <style>
+    ::content * {
+      color: #7A200D;
+    }
+  </style>
 
-<template id="top-stats">
-	<style>
-		::content * {
-			color: #7A200D;
-		}
-	</style>
-	<tapered-rule></tapered-rule>
-	<content></content>
-	<tapered-rule></tapered-rule>
-</template>
-
-<script>
+  <tapered-rule></tapered-rule>
+  <content></content>
+  <tapered-rule></tapered-rule>
+</template><script>
 (function(window, document) {
-	var elemName = 'top-stats';
-	var thatDoc = document;
-	var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
-	var proto = Object.create(HTMLElement.prototype, {
-		createdCallback: {
-			value: function() {
-				var template = thisDoc.getElementById(elemName);
-				var clone = thatDoc.importNode(template.content, true);
-				this.createShadowRoot().appendChild(clone);
-			}
-		}
-	});
-	thatDoc.registerElement(elemName, {prototype: proto});
+  var elemName = 'top-stats';
+  var thatDoc = document;
+  var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
+  var proto = Object.create(HTMLElement.prototype, {
+    createdCallback: {
+      value: function() {
+        var template = thisDoc.getElementById(elemName);
+        var clone = thatDoc.importNode(template.content, true);
+        this.createShadowRoot().appendChild(clone);
+      }
+    }
+  });
+  thatDoc.registerElement(elemName, {prototype: proto});
 })(window, document);
-</script>
+</script><template id="creature-heading">
+  <style>
+    ::content > h1 {
+      font-family: 'Libre Baskerville', 'Lora', 'Calisto MT',
+                   'Bookman Old Style', Bookman, 'Goudy Old Style',
+                   Garamond, 'Hoefler Text', 'Bitstream Charter',
+                   Georgia, serif;
+      color: #7A200D;
+      font-weight: 700;
+      margin: 0px;
+      font-size: 23px;
+      letter-spacing: 1px;
+      font-variant: small-caps;
+    }
 
-<template id="creature-heading">
-	<style>
-		::content > h1 {
-		font-family: 'Libre Baskerville', 'Lora', 'Calisto MT',
-					'Bookman Old Style', Bookman, 'Goudy Old Style',
-					Garamond, 'Hoefler Text', 'Bitstream Charter',
-					Georgia, serif;
-		color: #7A200D;
-		font-weight: 700;
-		margin: 0px;
-		font-size: 23px;
-		letter-spacing: 1px;
-		font-variant: small-caps;
-		}
-
-		::content > h2 {
-		font-weight: normal;
-		font-style: italic;
-		font-size: 12px;
-		margin: 0;
-		}
-	</style>
-	<content select="h1"></content>
-	<content select="h2"></content>
-</template>
-
-<script>
+    ::content > h2 {
+      font-weight: normal;
+      font-style: italic;
+      font-size: 12px;
+      margin: 0;
+    }
+  </style>
+  <content select="h1"></content>
+  <content select="h2"></content>
+</template><script>
 (function(window, document) {
-	var elemName = 'creature-heading';
-	var thatDoc = document;
-	var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
-	var proto = Object.create(HTMLElement.prototype, {
-		createdCallback: {
-			value: function() {
-				var template = thisDoc.getElementById(elemName);
-				var clone = thatDoc.importNode(template.content, true);
-				this.createShadowRoot().appendChild(clone);
-			}
-		}
-	});
-	thatDoc.registerElement(elemName, {prototype: proto});
+  var elemName = 'creature-heading';
+  var thatDoc = document;
+  var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
+  var proto = Object.create(HTMLElement.prototype, {
+    createdCallback: {
+      value: function() {
+        var template = thisDoc.getElementById(elemName);
+        var clone = thatDoc.importNode(template.content, true);
+        this.createShadowRoot().appendChild(clone);
+      }
+    }
+  });
+  thatDoc.registerElement(elemName, {prototype: proto});
 })(window, document);
-</script>
-
-<template id="abilities-block">
-	<style>
-		table {
-			width: 100%;
-			border: 0px;
-			border-collapse: collapse;
-		}
-		th, td {
-			width: 50px;
-			text-align: center;
-		}
-	</style>
-	<tapered-rule></tapered-rule>
-	<table>
+</script><template id="abilities-block">
+  <style>
+    table {
+      width: 100%;
+      border: 0px;
+      border-collapse: collapse;
+    }
+    th, td {
+      width: 50px;
+      text-align: center;
+    }
+  </style>
+  <tapered-rule></tapered-rule>
+  <table>
     <tbody><tr>
       <th>STR</th>
       <th>DEX</th>
@@ -200,164 +186,153 @@ def genFormatting():
       <td id="wis"></td>
       <td id="cha"></td>
     </tr>
-	</tbody></table>
-	<tapered-rule></tapered-rule>
-</template>
-
-<script>
+  </tbody></table>
+  <tapered-rule></tapered-rule>
+</template><script>
 (function(window, document) {
-	function abilityModifier(abilityScore) {
-		var score = parseInt(abilityScore, 10);
-		return Math.floor((score - 10) / 2);
-	}
+  function abilityModifier(abilityScore) {
+    var score = parseInt(abilityScore, 10);
+    return Math.floor((score - 10) / 2);
+  }
 
-	function formattedModifier(abilityModifier) {
-		if (abilityModifier >= 0) {
-		return '+' + abilityModifier;
-	}
+  function formattedModifier(abilityModifier) {
+    if (abilityModifier >= 0) {
+      return '+' + abilityModifier;
+    }
     // This is an en dash, NOT a "normal" dash. The minus sign needs to be more visible.
-	return unescape('%u2013') + Math.abs(abilityModifier);
-	}
+    return unescape('%u2013') + Math.abs(abilityModifier);
+  }
 
-	function abilityText(abilityScore) {
-		return [String(abilityScore),
+  function abilityText(abilityScore) {
+    return [String(abilityScore),
             ' (',
             formattedModifier(abilityModifier(abilityScore)),
             ')'].join('');
-	}
+  }
 
-	var elemName = 'abilities-block';
-	var thatDoc = document;
-	var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
-	var proto = Object.create(HTMLElement.prototype, {
-		createdCallback: {
-			value: function() {
-				var template = thisDoc.getElementById(elemName);
-				var clone = thatDoc.importNode(template.content, true);
-				var root = this.createShadowRoot().appendChild(clone);
-			}
-		},
-		attachedCallback: {
-			value: function() {
-				var root = this.shadowRoot;
-				for (var i = 0; i < this.attributes.length; i++) {
-					var attribute = this.attributes[i];
-					var abilityShortName = attribute.name.split('-')[1];
-					root.getElementById(abilityShortName).textContent =
-					abilityText(attribute.value);
-				}
-			}
-		}
-	});
-	thatDoc.registerElement(elemName, {prototype: proto});
+  var elemName = 'abilities-block';
+  var thatDoc = document;
+  var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
+  var proto = Object.create(HTMLElement.prototype, {
+    createdCallback: {
+      value: function() {
+        var template = thisDoc.getElementById(elemName);
+        var clone = thatDoc.importNode(template.content, true);
+        var root = this.createShadowRoot().appendChild(clone);
+      }
+    },
+    attachedCallback: {
+      value: function() {
+        var root = this.shadowRoot;
+        for (var i = 0; i < this.attributes.length; i++) {
+          var attribute = this.attributes[i];
+          var abilityShortName = attribute.name.split('-')[1];
+          root.getElementById(abilityShortName).textContent =
+             abilityText(attribute.value);
+        }
+
+      }
+    }
+  });
+  thatDoc.registerElement(elemName, {prototype: proto});
 })(window, document);
-</script>
-
-<template id="property-block">
-	<style>
-	:host {
-		margin-top: 0.3em;
-		margin-bottom: 0.9em;
-		line-height: 1.5;
-		display: block;
+</script><template id="property-block">
+  <style>
+    :host {
+      margin-top: 0.3em;
+      margin-bottom: 0.9em;
+      line-height: 1.5;
+      display: block;
     }
 
     ::content > h4 {
-		margin: 0;
-		display: inline;
-		font-weight: bold;
-		font-style: italic;
+      margin: 0;
+      display: inline;
+      font-weight: bold;
+      font-style: italic;
     }
 
     ::content > p:first-of-type {
-		display: inline;
-		text-indent: 0;
+      display: inline;
+      text-indent: 0;
     }
 
     ::content > p {
-		text-indent: 1em;
-		margin: 0;
+      text-indent: 1em;
+      margin: 0;
     }
-	</style>
-	<content></content>
-</template>
-
-<script>
+  </style>
+  <content></content>
+</template><script>
 (function(window, document) {
-	var elemName = 'property-block';
-	var thatDoc = document;
-	var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
-	var proto = Object.create(HTMLElement.prototype, {
-		createdCallback: {
-			value: function() {
-				var template = thisDoc.getElementById(elemName);
-				var clone = thatDoc.importNode(template.content, true);
-				this.createShadowRoot().appendChild(clone);
-			}
-		}
-	});
-	thatDoc.registerElement(elemName, {prototype: proto});
+  var elemName = 'property-block';
+  var thatDoc = document;
+  var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
+  var proto = Object.create(HTMLElement.prototype, {
+    createdCallback: {
+      value: function() {
+        var template = thisDoc.getElementById(elemName);
+        var clone = thatDoc.importNode(template.content, true);
+        this.createShadowRoot().appendChild(clone);
+      }
+    }
+  });
+  thatDoc.registerElement(elemName, {prototype: proto});
 })(window, document);
-</script>
-
-<template id="property-line">
-	<style>
+</script><template id="property-line">
+  <style>
     :host {
-		line-height: 1.4;
-		display: block;
-		text-indent: -1em;
-		padding-left: 1em;
+      line-height: 1.4;
+      display: block;
+      text-indent: -1em;
+      padding-left: 1em;
     }
 
     ::content > h4 {
-		margin: 0;
-		display: inline;
-		font-weight: bold;
+      margin: 0;
+      display: inline;
+      font-weight: bold;
     }
 
     ::content > p:first-of-type {
-		display: inline;
-		text-indent: 0;
+      display: inline;
+      text-indent: 0;
     }
 
     ::content > p {
-		text-indent: 1em;
-		margin: 0;
+      text-indent: 1em;
+      margin: 0;
     }
-	</style>
-	<content></content>
-</template>
-
-<script>
+  </style>
+  <content></content>
+</template><script>
 (function(window, document) {
-	var elemName = 'property-line';
-	var thatDoc = document;
-	var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
-	var proto = Object.create(HTMLElement.prototype, {
-		createdCallback: {
-			value: function() {
-				var template = thisDoc.getElementById(elemName);
-				var clone = thatDoc.importNode(template.content, true);
-				this.createShadowRoot().appendChild(clone);
-			}
-		}
-	});
-	thatDoc.registerElement(elemName, {prototype: proto});
+  var elemName = 'property-line';
+  var thatDoc = document;
+  var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
+  var proto = Object.create(HTMLElement.prototype, {
+    createdCallback: {
+      value: function() {
+        var template = thisDoc.getElementById(elemName);
+        var clone = thatDoc.importNode(template.content, true);
+        this.createShadowRoot().appendChild(clone);
+      }
+    }
+  });
+  thatDoc.registerElement(elemName, {prototype: proto});
 })(window, document);
-</script>
-
-<template id="stat-block">
-	<style>
-	.bar {
-		height: 5px;
-		background: #E69A28;
-		border: 1px solid #000;
-		position: relative;
-		z-index: 1;
-	}
+</script><template id="stat-block">
+  <style>
+    .bar {
+      height: 5px;
+      background: #E69A28;
+      border: 1px solid #000;
+      position: relative;
+      z-index: 1;
+    }
 
     :host {
-		display: inline-block;
+      display: inline-block;
     }
 
     #content-wrap {
@@ -424,38 +399,38 @@ def genFormatting():
     ::content > *:last-child {
       margin-bottom: 0;
     }
-	</style>
-	<div class="bar"></div>
-	<div id="content-wrap">
+  </style>
+  <div class="bar"></div>
+  <div id="content-wrap">
     <content></content>
-	</div>
-	<div class="bar"></div>
-</template>
-
-<script>
+  </div>
+  <div class="bar"></div>
+</template><script>
 (function(window, document) {
-	var elemName = 'stat-block';
-	var thatDoc = document;
-	var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
-	var proto = Object.create(HTMLElement.prototype, {
-		createdCallback: {
-			value: function() {
-			var template = thisDoc.getElementById(elemName);
+  var elemName = 'stat-block';
+  var thatDoc = document;
+  var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
+  var proto = Object.create(HTMLElement.prototype, {
+    createdCallback: {
+      value: function() {
+        var template = thisDoc.getElementById(elemName);
         // If the attr() CSS3 function were properly implemented, we wouldn't
         // need this hack...
-			if (this.hasAttribute('data-content-height')) {
-				var wrap = template.content.getElementById('content-wrap');
-				wrap.style.height = this.getAttribute('data-content-height') + 'px';
-			}
-			var clone = thatDoc.importNode(template.content, true);
-			this.createShadowRoot().appendChild(clone);
-			}
-		}
-	});
-	thatDoc.registerElement(elemName, {prototype: proto});
+        if (this.hasAttribute('data-content-height')) {
+          var wrap = template.content.getElementById('content-wrap');
+          wrap.style.height = this.getAttribute('data-content-height') + 'px';
+        }
+        var clone = thatDoc.importNode(template.content, true);
+        this.createShadowRoot().appendChild(clone);
+      }
+    }
+  });
+  thatDoc.registerElement(elemName, {prototype: proto});
 })(window, document);
 </script>
 """)
 
 	# Close the file now that we are done
 	wfile.close()
+	
+	return monster_name.lower() + ".html"

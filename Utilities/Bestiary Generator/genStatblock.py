@@ -11,7 +11,7 @@
 #	Statblock5e code is by Val Markovic (Valloric) 
 #		https://github.com/Valloric
 #
-#	Version 0.1
+#	Version 0.2
 #
 ################################################################################
 
@@ -230,7 +230,7 @@ def writeAbilities (rfile, wfile):
 		if len(line) > 1:
 			wfile.write("""
 			
-	<property-line>
+	<property-block>
 		<h4>
 		""")
 			
@@ -268,7 +268,7 @@ def writeActions (rfile, wfile):
 		if len(line) > 1:
 			wfile.write("""
 			
-	<property-line>
+	<property-block>
 		<h4>
 		""")
 		
@@ -303,7 +303,7 @@ def writeLegendaryActions (rfile, wfile):
 		if len(line) > 1:
 			wfile.write ("""
 			
-	<property-line>
+	<property-block>
 		<p>""")
 		
 			wfile.write(line[0] + '.')
@@ -329,7 +329,7 @@ def writeLegendaryActions (rfile, wfile):
 		if len(line) > 1:
 			wfile.write("""
 			
-	<property-line>
+	<property-block>
 		<h4>
 		""")
 		
@@ -349,14 +349,14 @@ def writeClosing (wfile):
 </stat-block>
 """)
 	
-def genStatblock():
+def genStatblock( monster_name, input_file ):
 	if len(sys.argv) < 3:
 		print ("Usage Error: genStatblock.py cannot run properly")
 		print_usage_instructions()
 		sys.exit()
 
 	# According to the usage instructions, the monster name is the second argument
-	monster_name = sys.argv[1]				# Get the monster name from arguments
+	#monster_name = sys.argv[1]				# Get the monster name from arguments
 
 	# Convert periods to spaces
 	monster_name = monster_name.replace ('.', ' ')
@@ -367,7 +367,7 @@ def genStatblock():
 
 	# We will write statblock code into the monster file
 	wfile = open (monster_name.lower() + ".html", 'a+')
-	rfile = open (sys.argv[2], 'r')
+	rfile = open (input_file, 'r')
 
 	############################################################################
 	# Writing the statblock code

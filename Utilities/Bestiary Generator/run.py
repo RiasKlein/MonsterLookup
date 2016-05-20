@@ -10,7 +10,7 @@
 #	Statblock5e code is by Val Markovic (Valloric) 
 #		https://github.com/Valloric
 #
-#	Version 0.1
+#	Version 0.2
 #
 ################################################################################
 
@@ -26,7 +26,12 @@ if len(sys.argv) < 3:
 	print_usage_instructions()
 	sys.exit()
 	
-genFormatting (sys.argv[1])
+file_name = genFormatting (sys.argv[1])
 genStatblock (sys.argv[1], sys.argv[2])
+
+# Add the ending to the file
+wfile = open (file_name, 'a+')
+wfile.write ("</body></html>")
+wfile.close()
 
 
