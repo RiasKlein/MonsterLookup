@@ -1,19 +1,17 @@
 ################################################################################
 #
-#	gen.py
-#	A barebones D&D Monster Generator using statblock5e 
-#	HTML files are outputted for information input
+#	genFormatting.py
+#	Generates statblock HTML formatting code for our monster
+#	This program is intended to be used as a subsystem for a monster generator.
 #
-#	Usage: python gen.py [monster name]
-#		If there is a space ine the monster name, for example: chain devil
-#		Use a period instead of space. That is: chain.devil 
+#	Usage: python genFormatting.py [monster name]
 #	
 #	This generator is developed by Shunman Tse (RiasKlein)
 #		https://github.com/riasklein
 #	Statblock5e code is by Val Markovic (Valloric) 
 #		https://github.com/Valloric
 #
-#	Version 1.3
+#	Version 0.2
 #
 ################################################################################
 
@@ -22,38 +20,39 @@ import sys
 # print_usage_instructions
 #	Function prints the usage instructions
 def print_usage_instructions ():
-	print ("Correct Usage:\tpython gen.py [monster name]")
+	print ("Correct Usage:\tpython genFormatting.py [monster name]")
+	
+def genFormatting( monster_name ):
+	if len(sys.argv) < 2:
+		print ("Usage Error: genFormatting.py cannot run properly")
+		print_usage_instructions()
+		sys.exit()
 
-if len(sys.argv) < 2:
-	print ("Usage Error:\tThe program needs a monster name.")
-	print_usage_instructions()
-	sys.exit()
+	# According to the usage instructions, the monster name is the second argument
+	#monster_name = sys.argv[1]				# Get the monster name from arguments
 
-# According to the usage instructions, the monster name is the second argument
-monster_name = sys.argv[1]				# Get the monster name from arguments
+	# Convert periods to spaces
+	monster_name = monster_name.replace ('.', ' ')
 
-# Convert periods to spaces
-monster_name = monster_name.replace ('.', ' ')
+	# Capitalize the first letter of every word in monster name
+	list = [word[0].upper() + word[1:] for word in monster_name.split()]
+	monster_name = " ".join(list)
 
-# Capitalize the first letter of every word in monster name
-list = [word[0].upper() + word[1:] for word in monster_name.split()]
-monster_name = " ".join(list)
+	# We will write statblock code into the monster file
+	wfile = open (monster_name.lower() + ".html", 'w')
 
-# Now we must create a HTML file with that monster's name
-filew = open (monster_name.lower() + ".html", 'w')
-
-################################################################################
-# Writing the formatting code into the HTML file
-################################################################################
-
-filew.write(
+	############################################################################
+	# Writing the formatting code
+	############################################################################
+	
+	wfile.write(
 """<!DOCTYPE html>
 <html><head><link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet" type="text/css"/><link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css"/><meta charset="utf-8"/>
 <title>""")
 
-filew.write(monster_name)
+	wfile.write(monster_name)
 
-filew.write(
+	wfile.write(
 """</title><style>
       body {
         margin: 0;
@@ -429,159 +428,9 @@ filew.write(
   thatDoc.registerElement(elemName, {prototype: proto});
 })(window, document);
 </script>
-"""
-)
-
-################################################################################
-# Writing the monster stats into the file
-################################################################################
-
-filew.write("""
-<stat-block>
-    <creature-heading>
-      <h1>""")
-
-filew.write(monster_name)
-
-filew.write("""</h1>
-      <h2>
-	  
-	  </h2>
-    </creature-heading>
-
-    <top-stats>
-      <property-line>
-        <h4>Armor Class</h4>
-        <p> 
-		
-		</p>
-      </property-line>
-	  
-      <property-line>
-        <h4>Hit Points</h4>
-        <p> 
-		
-		</p>
-      </property-line>
-	  
-      <property-line>
-        <h4>Speed</h4>
-        <p>
-		
-		</p>
-      </property-line>
-
-      <abilities-block data-str="1" data-dex="1" data-con="1" data-int="1" data-wis="1" data-cha="1" ></abilities-block>
-
-	  <property-line>
-        <h4>Saving Throws</h4>
-        <p>
-		
-		</p>
-      </property-line>
-
-      <property-line>
-        <h4>Skills</h4>
-        <p>
-		
-		</p>
-      </property-line>
-
-	  <property-line>
-        <h4>Damage Resistances</h4>
-        <p>
-		
-		</p>
-      </property-line>
-	  
-	  <property-line>
-        <h4>Damage Immunities</h4>
-        <p>
-		
-		</p>
-      </property-line>
-	  
-	  <property-line>
-        <h4>Damage Vulnerabilities</h4>
-        <p>
-		
-		</p>
-      </property-line>
-
-	  <property-line>
-        <h4>Condition Immunities</h4>
-        <p>
-		
-		</p>
-      </property-line>
-
-      <property-line>
-        <h4>Senses</h4>
-		<p>
-		
-		</p>
-      </property-line>
-	  
-      <property-line>
-        <h4>Languages</h4>
-        <p>
-		
-		</p>
-      </property-line>
-	  
-      <property-line>
-        <h4>Challenge</h4>
-        <p>
-		
-		</p>
-      </property-line>
-    </top-stats>
-	
-	<property-block>
-		<h4>
-		
-		</h4>
-		<p>	
-		</p>
-    </property-block>
-	
-	<property-block>
-		<h4>
-		
-		</h4>
-		<p>	
-		</p>
-    </property-block>
-		
-    <h3>Actions</h3>
-	
-	<property-block>
-		<h4>
-		
-		</h4>
-		<p>	
-		</p>
-    </property-block>
-	
-	<property-block>
-		<h4>
-		
-		</h4>
-		<p><i>Melee Weapon Attack:</i> 
-		<i>Hit:</i> 
-		</p>
-    </property-block>
-	
-	<property-block>
-		<h4>
-		
-		</h4>
-		<p><i>Ranged Weapon Attack:</i> 
-		<i>Hit:</i> 
-		</p>
-    </property-block>
-
-  </stat-block></body></html>
 """)
 
-filew.close()		# Closing the opened file
+	# Close the file now that we are done
+	wfile.close()
+	
+	return monster_name.lower() + ".html"
