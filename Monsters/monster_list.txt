@@ -1,7 +1,15 @@
 aarakocra.html
 aboleth.html
+adult black dragon.html
 adult blue dracolich.html
+adult blue dragon.html
+adult green dragon.html
+adult red dragon.html
 allosaurus.html
+ancient black dragon.html
+ancient blue dragon.html
+ancient green dragon.html
+ancient red dragon.html
 animated armor.html
 ankheg.html
 ankylosaurus.html
@@ -14,6 +22,8 @@ basilisk.html
 bearded devil.html
 behir.html
 beholder.html
+black dragon wyrmling.html
+blue dragon wyrmling.html
 bone devil.html
 bugbear chief.html
 bugbear.html
@@ -35,6 +45,7 @@ erinyes.html
 flying sword.html
 glabrezu.html
 goristro.html
+green dragon wyrmling.html
 hezrou.html
 horned devil.html
 ice devil.html
@@ -42,7 +53,6 @@ imp.html
 lemure.html
 manes.html
 marilith.html
-monster_list.txt
 nalfeshnee.html
 needle blight.html
 pit fiend.html
@@ -50,6 +60,7 @@ planetar.html
 plesiosaurus.html
 pteranodon.html
 quasit.html
+red dragon wyrmling.html
 rug of smothering.html
 shadow demon.html
 solar.html
@@ -62,3 +73,8 @@ tyrannosaurus rex.html
 vine blight.html
 vrock.html
 yochlol.html
+young black dragon.html
+young blue dragon.html
+young green dragon.html
+young red dragon.html
+young red shadow dragon.html
