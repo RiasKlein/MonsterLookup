@@ -2,7 +2,8 @@
 #
 #	gen.py
 #	A barebones D&D Monster Generator using statblock5e 
-#	HTML files are outputted for information input
+#	Only the monster name is filled in, all other monster information must be
+#	inserted into the code manually. 
 #
 #	Usage: python gen.py [monster name]
 #		If there is a space ine the monster name, for example: chain devil
