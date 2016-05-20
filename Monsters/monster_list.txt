@@ -5,11 +5,13 @@ adult blue dracolich.html
 adult blue dragon.html
 adult green dragon.html
 adult red dragon.html
+adult white dragon.html
 allosaurus.html
 ancient black dragon.html
 ancient blue dragon.html
 ancient green dragon.html
 ancient red dragon.html
+ancient white dragon.html
 animated armor.html
 ankheg.html
 ankylosaurus.html
@@ -53,6 +55,7 @@ imp.html
 lemure.html
 manes.html
 marilith.html
+monster_list.txt
 nalfeshnee.html
 needle blight.html
 pit fiend.html
@@ -72,9 +75,11 @@ twig blight.html
 tyrannosaurus rex.html
 vine blight.html
 vrock.html
+white dragon wyrmling.html
 yochlol.html
 young black dragon.html
 young blue dragon.html
 young green dragon.html
 young red dragon.html
 young red shadow dragon.html
+young white dragon.html
