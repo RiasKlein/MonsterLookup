@@ -11,6 +11,7 @@ adult green dragon.html
 adult red dragon.html
 adult silver dragon.html
 adult white dragon.html
+air elemental.html
 allosaurus.html
 ancient black dragon.html
 ancient blue dragon.html
@@ -60,7 +61,9 @@ dretch.html
 drider.html
 dryad.html
 duergar.html
+earth elemental.html
 erinyes.html
+fire elemental.html
 flying sword.html
 glabrezu.html
 gold dragon wyrmling.html
@@ -94,6 +97,7 @@ twig blight.html
 tyrannosaurus rex.html
 vine blight.html
 vrock.html
+water elemental.html
 white dragon wyrmling.html
 yochlol.html
 young black dragon.html
