@@ -91,7 +91,7 @@ def writeTopStats (rfile, wfile):
 			wfile.write("""
 			
 		<property-line>
-			<h4>Hit Points</h4>
+			<h4>Speed</h4>
 			<p>
 			""")
 			wfile.write (line [len ('speed '):])
