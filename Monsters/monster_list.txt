@@ -3,14 +3,24 @@ aboleth.html
 adult black dragon.html
 adult blue dracolich.html
 adult blue dragon.html
+adult brass dragon.html
+adult bronze dragon.html
+adult copper dragon.html
+adult gold dragon.html
 adult green dragon.html
 adult red dragon.html
+adult silver dragon.html
 adult white dragon.html
 allosaurus.html
 ancient black dragon.html
 ancient blue dragon.html
+ancient brass dragon.html
+ancient bronze dragon.html
+ancient copper dragon.html
+ancient gold dragon.html
 ancient green dragon.html
 ancient red dragon.html
+ancient silver dragon.html
 ancient white dragon.html
 animated armor.html
 ankheg.html
@@ -27,6 +37,8 @@ beholder.html
 black dragon wyrmling.html
 blue dragon wyrmling.html
 bone devil.html
+brass dragon wyrmling.html
+bronze dragon wyrmling.html
 bugbear chief.html
 bugbear.html
 bulette.html
@@ -35,6 +47,7 @@ cambion.html
 carrion crawler.html
 chain devil.html
 chasme.html
+copper dragon wyrmling.html
 darkmantle.html
 death knight.html
 death tyrant.html
@@ -46,6 +59,7 @@ dretch.html
 erinyes.html
 flying sword.html
 glabrezu.html
+gold dragon wyrmling.html
 goristro.html
 green dragon wyrmling.html
 hezrou.html
@@ -66,6 +80,7 @@ quasit.html
 red dragon wyrmling.html
 rug of smothering.html
 shadow demon.html
+silver dragon wyrmling.html
 solar.html
 spectator.html
 spined devil.html
@@ -79,7 +94,12 @@ white dragon wyrmling.html
 yochlol.html
 young black dragon.html
 young blue dragon.html
+young brass dragon.html
+young bronze dragon.html
+young copper dragon.html
+young gold dragon.html
 young green dragon.html
 young red dragon.html
 young red shadow dragon.html
+young silver dragon.html
 young white dragon.html

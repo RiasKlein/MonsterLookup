@@ -10,13 +10,13 @@
 #	Statblock5e code is by Val Markovic (Valloric) 
 #		https://github.com/Valloric
 #
-#	Version 0.2
+#	Version 0.3
 #
 ################################################################################
 
 import sys
-from genFormatting import genFormatting
-from genStatblock import genStatblock
+from Helpers.genFormatting import genFormatting
+from Helpers.genStatblock import genStatblock
 
 def print_usage_instructions():
 	print ("Correct Usage:\tpython run.py [monster name] [info file name]")
