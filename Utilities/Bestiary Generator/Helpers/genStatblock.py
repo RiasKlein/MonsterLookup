@@ -11,7 +11,7 @@
 #	Statblock5e code is by Val Markovic (Valloric) 
 #		https://github.com/Valloric
 #
-#	Version 0.3
+#	Version 0.4
 #
 ################################################################################
 
@@ -98,9 +98,31 @@ def writeTopStats (rfile, wfile):
 			wfile.write ("""			</p>
 		</property-line>""")
 		
+		# Monster Attributes
+		if 'str' in line.lower() and 'dex' in line.lower() and 'con' in line.lower() and 'int' in line.lower() and 'wis' in line.lower() and 'cha' in line.lower():
+			line = rfile.readline()
+			line = line.split()
+			
+			# This is for a line break in the generated output file
 			wfile.write ("""
 			
-		<abilities-block data-str="1" data-dex="1" data-con="1" data-int="1" data-wis="1" data-cha="1" ></abilities-block>""")
+		""")
+			
+			# Let's fill in our stats!!
+			wfile.write ('<abilities-block data-str="')
+			wfile.write (line[0])
+			wfile.write ('" data-dex="')
+			wfile.write (line[2])
+			wfile.write ('" data-con="')
+			wfile.write (line[4])
+			wfile.write ('" data-int="')
+			wfile.write (line[6])
+			wfile.write ('" data-wis="')
+			wfile.write (line[8])
+			wfile.write ('" data-cha="')
+			wfile.write (line[10])
+			wfile.write ('" ></abilities-block>')
+			line = line[0]
 			
 		# Saving Throws
 		if 'saving throws' in line.lower():
