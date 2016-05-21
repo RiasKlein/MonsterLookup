@@ -55,7 +55,11 @@ demilich.html
 deva.html
 displacer beast.html
 doppelganger.html
+dragon turtle.html
 dretch.html
+drider.html
+dryad.html
+duergar.html
 erinyes.html
 flying sword.html
 glabrezu.html
