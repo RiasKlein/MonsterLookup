@@ -11,7 +11,7 @@
 #	Statblock5e code is by Val Markovic (Valloric) 
 #		https://github.com/Valloric
 #
-#	Version 0.4
+#	Version 0.5
 #
 ################################################################################
 
@@ -282,6 +282,12 @@ def writeActions (rfile, wfile):
 			return
 		elif line.strip().lower() == 'bestiary':
 			return
+			
+		# Adding in Reactions label
+		if line.strip().lower() == 'reactions':
+			wfile.write("""
+			
+	<h3>Reactions</h3>""")
 		
 		# Splitting off the name of the action
 		line = line.split ('.', 1)
