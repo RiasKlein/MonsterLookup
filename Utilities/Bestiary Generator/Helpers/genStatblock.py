@@ -11,7 +11,7 @@
 #	Statblock5e code is by Val Markovic (Valloric) 
 #		https://github.com/Valloric
 #
-#	Version 0.5
+#	Version 0.6
 #
 ################################################################################
 
@@ -242,7 +242,7 @@ def writeAbilities (rfile, wfile):
 		if not line: print_ferror ('writeAbilities')
 		
 		# Ending condition is seeing the start of the Actions category
-		if line.strip().lower() == 'actions':
+		if line.strip().lower() == 'actions' or line.strip().lower() == 'reactions':
 			return
 			
 		# Write valid properties into the output file
