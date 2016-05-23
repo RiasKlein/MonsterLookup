@@ -26,4 +26,4 @@ This system provides dungeon masters with easy access to monster information; it
 ## The Future of the System
 
 * More monster entries will be included over time.
-* A basic generator utility is now available to ease the monster creation process. A generator with more functionality is being worked on.
+* Basic generator utilities are now available to assist in the monster creation process. 
