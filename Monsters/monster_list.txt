@@ -48,12 +48,14 @@ cambion.html
 carrion crawler.html
 chain devil.html
 chasme.html
+clay golem.html
 cloud giant.html
 copper dragon wyrmling.html
 dao.html
 darkmantle.html
 death knight.html
 death tyrant.html
+deep gnome (svirfneblin).html
 demilich.html
 deva.html
 displacer beast.html
@@ -78,6 +80,7 @@ faerie dragon.html
 fire elemental.html
 fire giant.html
 flameskull.html
+flesh golem.html
 flumph.html
 flying sword.html
 fomorian.html
@@ -97,14 +100,23 @@ glabrezu.html
 gnoll fang of yeenoghu.html
 gnoll pack lord.html
 gnoll.html
+goblin boss.html
+goblin.html
 gold dragon wyrmling.html
+gorgon.html
 goristro.html
 green dragon wyrmling.html
+grell.html
+grick alpha.html
+grick.html
+griffon.html
+grimlock.html
 hezrou.html
 hill giant.html
 horned devil.html
 ice devil.html
 imp.html
+iron golem.html
 lemure.html
 manes.html
 marid.html
@@ -126,6 +138,7 @@ solar.html
 spectator.html
 spined devil.html
 stone giant.html
+stone golem.html
 storm giant.html
 tiamat.html
 triceratops.html
