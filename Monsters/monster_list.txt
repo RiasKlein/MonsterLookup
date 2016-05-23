@@ -48,33 +48,66 @@ cambion.html
 carrion crawler.html
 chain devil.html
 chasme.html
+cloud giant.html
 copper dragon wyrmling.html
+dao.html
 darkmantle.html
 death knight.html
 death tyrant.html
 demilich.html
 deva.html
 displacer beast.html
+djinni.html
 doppelganger.html
 dragon turtle.html
 dretch.html
 drider.html
+drow elite warrior.html
+drow mage.html
+drow priestess of lolth.html
+drow.html
 dryad.html
 duergar.html
 earth elemental.html
+efreeti.html
+empyrean.html
 erinyes.html
+ettercap.html
+ettin.html
+faerie dragon.html
 fire elemental.html
+fire giant.html
+flameskull.html
+flumph.html
 flying sword.html
+fomorian.html
+frost giant.html
+galeb duhr.html
+gargoyle.html
+gas spore.html
+ghast.html
+ghost.html
+ghoul.html
+gibbering mouther.html
+githyanki knight.html
+githyanki monk.html
+githyanki warrior.html
+githyanki zerth.html
 glabrezu.html
+gnoll fang of yeenoghu.html
+gnoll pack lord.html
+gnoll.html
 gold dragon wyrmling.html
 goristro.html
 green dragon wyrmling.html
 hezrou.html
+hill giant.html
 horned devil.html
 ice devil.html
 imp.html
 lemure.html
 manes.html
+marid.html
 marilith.html
 monster_list.txt
 nalfeshnee.html
@@ -87,15 +120,19 @@ quasit.html
 red dragon wyrmling.html
 rug of smothering.html
 shadow demon.html
+shrieker.html
 silver dragon wyrmling.html
 solar.html
 spectator.html
 spined devil.html
+stone giant.html
+storm giant.html
 tiamat.html
 triceratops.html
 twig blight.html
 tyrannosaurus rex.html
 vine blight.html
+violet fungus.html
 vrock.html
 water elemental.html
 white dragon wyrmling.html
