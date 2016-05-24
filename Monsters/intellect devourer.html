@@ -1,59 +1,6 @@
-################################################################################
-#
-#	genFormatting.py
-#	Generates statblock HTML formatting code for our monster
-#	This program is intended to be used as a subsystem for a monster generator.
-#
-#	Usage: python genFormatting.py [monster name]
-#	
-#	This generator is developed by Shunman Tse (RiasKlein)
-#		https://github.com/riasklein
-#	Statblock5e code is by Val Markovic (Valloric) 
-#		https://github.com/Valloric
-#
-#	Version 0.7
-#
-################################################################################
-
-import sys
-
-# print_usage_instructions
-#	Function prints the usage instructions
-def print_usage_instructions ():
-	print ("Correct Usage:\tpython genFormatting.py [monster name]")
-	
-def genFormatting( monster_name ):
-	if len(sys.argv) < 2:
-		print ("Usage Error: genFormatting.py cannot run properly")
-		print_usage_instructions()
-		sys.exit()
-
-	# According to the usage instructions, the monster name is the second argument
-	#monster_name = sys.argv[1]				# Get the monster name from arguments
-
-	# Convert periods to spaces
-	monster_name = monster_name.replace ('.', ' ')
-
-	# Capitalize the first letter of every word in monster name
-	list = [word[0].upper() + word[1:] for word in monster_name.split()]
-	monster_name = " ".join(list)
-
-	# We will write statblock code into the monster file
-	wfile = open (monster_name.lower() + ".html", 'w')
-
-	############################################################################
-	# Writing the formatting code
-	############################################################################
-	
-	wfile.write(
-"""<!DOCTYPE html>
+<!DOCTYPE html>
 <html><head><link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet" type="text/css"/><link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css"/><meta charset="utf-8"/>
-<title>""")
-
-	wfile.write(monster_name)
-
-	wfile.write(
-"""</title><style>
+<title>Intellect Devourer</title><style>
       body {
         margin: 0;
       }
@@ -428,9 +375,125 @@ def genFormatting( monster_name ):
   thatDoc.registerElement(elemName, {prototype: proto});
 })(window, document);
 </script>
-""")
 
-	# Close the file now that we are done
-	wfile.close()
+<stat-block>
+	<creature-heading>
+		<h1>Intellect Devourer</h1>
+		<h2>
+		Tiny aberration, lawful evil 
+		</h2>
+	</creature-heading>
 	
-	return monster_name.lower() + ".html"
+	<top-stats>		
+		<property-line>
+			<h4>Armor Class</h4>
+			<p>
+			12 
+			</p>
+		</property-line>
+			
+		<property-line>
+			<h4>Hit Points</h4>
+			<p>
+			21 (6d4 + 6) 
+			</p>
+		</property-line>
+			
+		<property-line>
+			<h4>Speed</h4>
+			<p>
+			40 ft. 
+			</p>
+		</property-line>
+			
+		<abilities-block data-str="6" data-dex="14" data-con="13" data-int="12" data-wis="11" data-cha="10" ></abilities-block>	
+			
+		<property-line>
+			<h4>Skills</h4>
+			<p>
+			Perception +2, Stealth +4 
+			</p>
+		</property-line>	
+			
+		<property-line>
+			<h4>Damage Resistances</h4>
+			<p>
+			bludgeoning, piercing, and slashing from nonmagical weapons 
+			</p>
+		</property-line>	
+			
+		<property-line>
+			<h4>Condition Immunities</h4>
+			<p>
+			blinded 
+			</p>
+		</property-line>	
+			
+		<property-line>
+			<h4>Senses</h4>
+			<p>
+			blindsight 60 ft. (blind beyond this radius), passive Perception 12 
+			</p>
+		</property-line>	
+			
+		<property-line>
+			<h4>Languages</h4>
+			<p>
+			understands Deep Speech but can't speak, telepathy 60 ft. 
+			</p>
+		</property-line>	
+			
+		<property-line>
+			<h4>Challenge</h4>
+			<p>
+			2 (450 XP) 
+			</p>
+		</property-line>
+	</top-stats>
+			
+	<property-block>
+		<h4>
+		Detect Sentience.
+		</h4>
+		<p> The intellect devourer can sense the presence and location of any creature within 300 feet of it that has an 
+		Intelligence of 3 or higher, regardless of interposing barriers, unless the creature is protected by a 
+		<i>mind blank</i> spell. 
+		</p>
+	</property-block>
+	
+	<h3>Actions</h3>
+			
+	<property-block>
+		<h4>
+		Multiattack.
+		</h4>
+		<p> The intellect devourer makes one attack with its claws and uses Devour Intellect. 
+		</p>
+	</property-block>
+			
+	<property-block>
+		<h4>
+		Claws.
+		</h4>
+		<p> <i>Melee Weapon Attack:</i> +4 to hit, reach 5 ft., one target. <i>Hit:</i> 7 (2d4 + 2) slashing damage. 
+		</p>
+	</property-block>
+			
+	<property-block>
+		<h4>
+		Devour Intellect.
+		</h4>
+		<p> The intellect devourer targets one creature it can see within 10 feet of it that has a brain. The target must succeed on a DC 12 Intelligence saving throw against this magic or take 11 (2d10) psychic damage. Also on a failure, roll 3d6: If the total equals or exceeds the target's Intelligence score, that score is reduced to 0. The target is stunned until it regains at least one point of Intelligence. 
+		</p>
+	</property-block>
+			
+	<property-block>
+		<h4>
+		Body Thief.
+		</h4>
+		<p> The intellect devourer initiates an Intelligence contest with an incapacitated humanoid within 5 feet of it. If it wins the contest, the intellect devourer magically consumes the target's brain, teleports into the target's skull, and takes control of the target's body. While inside a creature, the intellect devourer has total cover against attacks and other effects originating outside its host. The intellect devourer retains its Intelligence, Wisdom, and Charisma scores, as well as its understanding of Deep Speech, its telepathy, and its traits. It otherwise adopts the target's statistics. It knows everything the creature knew, including spells and languages. 
+		</p> <p> If the host body drops to 0 hit points, the intellect devourer must leave it. A <i>protection from evil and good</i> spell cast on the body drives the intellect devourer out. The intellect devourer is also forced out if the target regains its devoured brain by means of a <i>wish</i>. By spending 5 feet of its movement, the intellect devourer can voluntarily leave the body, teleporting to the nearest unoccupied space within 5 feet of it. The body then dies, unless its brain is restored within 1 round. 
+		</p>
+	</property-block>
+</stat-block>
+</body></html>
