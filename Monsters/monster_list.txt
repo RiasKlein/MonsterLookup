@@ -1,7 +1,28 @@
 aarakocra.html
 aboleth.html
+adult black dragon.html
 adult blue dracolich.html
+adult blue dragon.html
+adult brass dragon.html
+adult bronze dragon.html
+adult copper dragon.html
+adult gold dragon.html
+adult green dragon.html
+adult red dragon.html
+adult silver dragon.html
+adult white dragon.html
+air elemental.html
 allosaurus.html
+ancient black dragon.html
+ancient blue dragon.html
+ancient brass dragon.html
+ancient bronze dragon.html
+ancient copper dragon.html
+ancient gold dragon.html
+ancient green dragon.html
+ancient red dragon.html
+ancient silver dragon.html
+ancient white dragon.html
 animated armor.html
 ankheg.html
 ankylosaurus.html
@@ -14,7 +35,11 @@ basilisk.html
 bearded devil.html
 behir.html
 beholder.html
+black dragon wyrmling.html
+blue dragon wyrmling.html
 bone devil.html
+brass dragon wyrmling.html
+bronze dragon wyrmling.html
 bugbear chief.html
 bugbear.html
 bulette.html
@@ -23,42 +48,133 @@ cambion.html
 carrion crawler.html
 chain devil.html
 chasme.html
+clay golem.html
+cloud giant.html
+copper dragon wyrmling.html
+dao.html
 darkmantle.html
 death knight.html
 death tyrant.html
+deep gnome (svirfneblin).html
 demilich.html
 deva.html
 displacer beast.html
+djinni.html
 doppelganger.html
+dragon turtle.html
 dretch.html
+drider.html
+drow elite warrior.html
+drow mage.html
+drow priestess of lolth.html
+drow.html
+dryad.html
+duergar.html
+earth elemental.html
+efreeti.html
+empyrean.html
 erinyes.html
+ettercap.html
+ettin.html
+faerie dragon.html
+fire elemental.html
+fire giant.html
+flameskull.html
+flesh golem.html
+flumph.html
 flying sword.html
+fomorian.html
+frost giant.html
+galeb duhr.html
+gargoyle.html
+gas spore.html
+ghast.html
+ghost.html
+ghoul.html
+gibbering mouther.html
+githyanki knight.html
+githyanki monk.html
+githyanki warrior.html
+githyanki zerth.html
 glabrezu.html
+gnoll fang of yeenoghu.html
+gnoll pack lord.html
+gnoll.html
+goblin boss.html
+goblin.html
+gold dragon wyrmling.html
+gorgon.html
 goristro.html
+green dragon wyrmling.html
+green hag.html
+grell.html
+grick alpha.html
+grick.html
+griffon.html
+grimlock.html
+half-red dragon veteran.html
+harpy.html
+hell hound.html
+helmed horror.html
 hezrou.html
+hill giant.html
+hippogriff.html
+hobgoblin captain.html
+hobgoblin warlord.html
+hobgoblin.html
+homunculus.html
+hook horror.html
 horned devil.html
+hydra.html
 ice devil.html
 imp.html
+intellect devourer.html
+invisible stalker.html
+iron golem.html
+jackalwere.html
 lemure.html
 manes.html
+marid.html
 marilith.html
 monster_list.txt
 nalfeshnee.html
 needle blight.html
+night hag.html
 pit fiend.html
 planetar.html
 plesiosaurus.html
 pteranodon.html
 quasit.html
+red dragon wyrmling.html
 rug of smothering.html
+sea hag.html
 shadow demon.html
+shrieker.html
+silver dragon wyrmling.html
 solar.html
 spectator.html
 spined devil.html
+stone giant.html
+stone golem.html
+storm giant.html
 tiamat.html
 triceratops.html
 twig blight.html
 tyrannosaurus rex.html
 vine blight.html
+violet fungus.html
 vrock.html
+water elemental.html
+white dragon wyrmling.html
 yochlol.html
+young black dragon.html
+young blue dragon.html
+young brass dragon.html
+young bronze dragon.html
+young copper dragon.html
+young gold dragon.html
+young green dragon.html
+young red dragon.html
+young red shadow dragon.html
+young silver dragon.html
+young white dragon.html
