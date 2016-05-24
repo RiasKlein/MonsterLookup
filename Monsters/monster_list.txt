@@ -106,6 +106,7 @@ gold dragon wyrmling.html
 gorgon.html
 goristro.html
 green dragon wyrmling.html
+green hag.html
 grell.html
 grick alpha.html
 grick.html
@@ -124,6 +125,7 @@ marilith.html
 monster_list.txt
 nalfeshnee.html
 needle blight.html
+night hag.html
 pit fiend.html
 planetar.html
 plesiosaurus.html
@@ -131,6 +133,7 @@ pteranodon.html
 quasit.html
 red dragon wyrmling.html
 rug of smothering.html
+sea hag.html
 shadow demon.html
 shrieker.html
 silver dragon wyrmling.html
