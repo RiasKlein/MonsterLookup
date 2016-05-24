@@ -11,7 +11,7 @@
 #	Statblock5e code is by Val Markovic (Valloric) 
 #		https://github.com/Valloric
 #
-#	Version 0.6
+#	Version 0.7
 #
 ################################################################################
 
@@ -145,6 +145,18 @@ def writeTopStats (rfile, wfile):
 			<p>
 			""")
 			wfile.write (line [len ('skills '):])
+			wfile.write ("""			</p>
+		</property-line>""")
+		
+		# Immunities
+		if 'immunities' in line.lower() and (line[:6].lower() != 'damage' and line[:9].lower() != 'condition'):
+			wfile.write("""
+			
+		<property-line>
+			<h4>Immunities</h4>
+			<p>
+			""")
+			wfile.write (line [len ('immunities '):])
 			wfile.write ("""			</p>
 		</property-line>""")
 		
