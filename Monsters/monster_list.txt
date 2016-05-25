@@ -146,7 +146,12 @@ kraken.html
 kuo-toa archpriest.html
 kuo-toa whip.html
 kuo-toa.html
+lamia.html
 lemure.html
+lich.html
+lizard king-queen.html
+lizardfolk shaman.html
+lizardfolk.html
 manes.html
 marid.html
 marilith.html
@@ -179,6 +184,11 @@ vine blight.html
 violet fungus.html
 vrock.html
 water elemental.html
+werebear.html
+wereboar.html
+wererat.html
+weretiger.html
+werewolf.html
 white dragon wyrmling.html
 winged kobold.html
 yochlol.html
