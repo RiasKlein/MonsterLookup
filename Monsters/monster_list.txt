@@ -46,11 +46,19 @@ bulette.html
 bullywug.html
 cambion.html
 carrion crawler.html
+centaur.html
 chain devil.html
 chasme.html
+chimera.html
+chuul.html
 clay golem.html
+cloaker.html
 cloud giant.html
+cockatrice.html
 copper dragon wyrmling.html
+couatl.html
+crawling claw.html
+cyclops.html
 dao.html
 darkmantle.html
 death knight.html
