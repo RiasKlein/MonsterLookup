@@ -11,7 +11,7 @@
 #	Statblock5e code is by Val Markovic (Valloric) 
 #		https://github.com/Valloric
 #
-#	Version 0.8
+#	Version 0.9
 #
 ################################################################################
 
@@ -317,9 +317,9 @@ def writeActions (rfile, wfile):
 			wfile.write("""
 		</h4>
 		<p>""")
-			
+
 			for i in range ( 1, len(line)):
-				if line[i] != '\n':
+				if line[i] != '\n' and line[i] != ' \n':
 					if ':' in line[i]:
 						italics = line[i].split(':', 1)
 						wfile.write ( '<i>' )
