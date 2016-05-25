@@ -10,7 +10,7 @@
 #	Statblock5e code is by Val Markovic (Valloric) 
 #		https://github.com/Valloric
 #
-#	Version 0.7
+#	Version 0.8
 #
 ################################################################################
 

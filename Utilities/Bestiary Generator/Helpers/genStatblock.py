@@ -11,7 +11,7 @@
 #	Statblock5e code is by Val Markovic (Valloric) 
 #		https://github.com/Valloric
 #
-#	Version 0.7
+#	Version 0.8
 #
 ################################################################################
 
@@ -302,7 +302,7 @@ def writeActions (rfile, wfile):
 	<h3>Reactions</h3>""")
 		
 		# Splitting off the name of the action
-		line = line.split ('.', 1)
+		line = line.split ('.')
 		
 		# A valid property has a . to name the ability
 		if len(line) > 1:
@@ -311,16 +311,26 @@ def writeActions (rfile, wfile):
 	<property-block>
 		<h4>
 		""")
-		
+
 			wfile.write (line[0] + '.')
 			
 			wfile.write("""
 		</h4>
 		<p>""")
 			
-			wfile.write (line[1])
+			for i in range ( 1, len(line)):
+				if line[i] != '\n':
+					if ':' in line[i]:
+						italics = line[i].split(':', 1)
+						wfile.write ( '<i>' )
+						wfile.write (italics[0] + ':')
+						wfile.write ( '</i>' )
+						wfile.write (italics[1] + '.')
+					else:
+						wfile.write (line[i] + '.')
 			
-			wfile.write("""		</p>
+			wfile.write("""		
+		</p>
 	</property-block>""")
 	
 def writeLegendaryActions (rfile, wfile):

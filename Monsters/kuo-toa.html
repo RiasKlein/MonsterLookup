@@ -1,59 +1,6 @@
-################################################################################
-#
-#	genFormatting.py
-#	Generates statblock HTML formatting code for our monster
-#	This program is intended to be used as a subsystem for a monster generator.
-#
-#	Usage: python genFormatting.py [monster name]
-#	
-#	This generator is developed by Shunman Tse (RiasKlein)
-#		https://github.com/riasklein
-#	Statblock5e code is by Val Markovic (Valloric) 
-#		https://github.com/Valloric
-#
-#	Version 0.8
-#
-################################################################################
-
-import sys
-
-# print_usage_instructions
-#	Function prints the usage instructions
-def print_usage_instructions ():
-	print ("Correct Usage:\tpython genFormatting.py [monster name]")
-	
-def genFormatting( monster_name ):
-	if len(sys.argv) < 2:
-		print ("Usage Error: genFormatting.py cannot run properly")
-		print_usage_instructions()
-		sys.exit()
-
-	# According to the usage instructions, the monster name is the second argument
-	#monster_name = sys.argv[1]				# Get the monster name from arguments
-
-	# Convert periods to spaces
-	monster_name = monster_name.replace ('.', ' ')
-
-	# Capitalize the first letter of every word in monster name
-	list = [word[0].upper() + word[1:] for word in monster_name.split()]
-	monster_name = " ".join(list)
-
-	# We will write statblock code into the monster file
-	wfile = open (monster_name.lower() + ".html", 'w')
-
-	############################################################################
-	# Writing the formatting code
-	############################################################################
-	
-	wfile.write(
-"""<!DOCTYPE html>
+<!DOCTYPE html>
 <html><head><link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet" type="text/css"/><link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css"/><meta charset="utf-8"/>
-<title>""")
-
-	wfile.write(monster_name)
-
-	wfile.write(
-"""</title><style>
+<title>Kuo-toa</title><style>
       body {
         margin: 0;
       }
@@ -428,9 +375,134 @@ def genFormatting( monster_name ):
   thatDoc.registerElement(elemName, {prototype: proto});
 })(window, document);
 </script>
-""")
 
-	# Close the file now that we are done
-	wfile.close()
+<stat-block>
+	<creature-heading>
+		<h1>Kuo-toa</h1>
+		<h2>
+		Medium humanoid (kuo-toa), neutral evil
+		</h2>
+	</creature-heading>
 	
-	return monster_name.lower() + ".html"
+	<top-stats>		
+		<property-line>
+			<h4>Armor Class</h4>
+			<p>
+			13 (natural armor, shield)
+			</p>
+		</property-line>
+			
+		<property-line>
+			<h4>Hit Points</h4>
+			<p>
+			18 (4d8)
+			</p>
+		</property-line>
+			
+		<property-line>
+			<h4>Speed</h4>
+			<p>
+			30 ft., swim 30 ft.
+			</p>
+		</property-line>
+			
+		<abilities-block data-str="13" data-dex="10" data-con="11" data-int="11" data-wis="10" data-cha="8" ></abilities-block>	
+			
+		<property-line>
+			<h4>Skills</h4>
+			<p>
+			Perception +4
+			</p>
+		</property-line>	
+			
+		<property-line>
+			<h4>Senses</h4>
+			<p>
+			darkvision 120 ft., passive Perception 14
+			</p>
+		</property-line>	
+			
+		<property-line>
+			<h4>Languages</h4>
+			<p>
+			Undercommon
+			</p>
+		</property-line>	
+			
+		<property-line>
+			<h4>Challenge</h4>
+			<p>
+			1/4 (50 XP)
+			</p>
+		</property-line>
+	</top-stats>
+			
+	<property-block>
+		<h4>
+		Amphibious.
+		</h4>
+		<p> The kuo-toa can breathe air and water.
+		</p>
+	</property-block>
+			
+	<property-block>
+		<h4>
+		Otherworldly Perception.
+		</h4>
+		<p> The kuo-toa can sense the presence of any creature within 30 feet of it that is invisible or on the Ethereal Plane. It can pinpoint such a creature that is moving.
+		</p>
+	</property-block>
+			
+	<property-block>
+		<h4>
+		Slippery.
+		</h4>
+		<p> The kuo-toa has advantage on ability checks and saving throws made to escape a grapple.
+		</p>
+	</property-block>
+			
+	<property-block>
+		<h4>
+		Sunlight Sensitivity.
+		</h4>
+		<p> While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+		</p>
+	</property-block>
+	
+	<h3>Actions</h3>
+			
+	<property-block>
+		<h4>
+		Bite.
+		</h4>
+		<p><i> Melee Weapon Attack:</i> +3 to hit, reach 5 ft., one target.<i> Hit:</i> 3 (1d4 + 1) piercing damage.		
+		</p>
+	</property-block>
+			
+	<property-block>
+		<h4>
+		Spear.
+		</h4>
+		<p><i> Melee or Ranged Weapon Attack:</i> +3 to hit, reach 5 ft. or range 20/60 ft., one target.<i> Hit:</i> 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.		
+		</p>
+	</property-block>
+			
+	<property-block>
+		<h4>
+		Net.
+		</h4>
+		<p><i> Ranged Weapon Attack:</i> +3 to hit, range 5/15 ft., one Large or smaller creature.<i> Hit:</i> The target is restrained. A creature can use its action to make a DC 10 Strength check to free itself or another creature in a net, ending the effect on a success. Dealing 5 slashing damage to the net (AC 10) frees the target without harming it and destroys the net.		
+		</p>
+	</property-block>
+			
+	<h3>Reactions</h3>
+			
+	<property-block>
+		<h4>
+		Sticky Shield.
+		</h4>
+		<p> When a creature misses the kuo-toa with a melee weapon attack, the kuo-toa uses its sticky shield to catch the weapon. The attacker must succeed on a DC 11 Strength saving throw, or the weapon becomes stuck to the kuo-toa’s shield. If the weapon’s wielder can’t or won’t let go of the weapon, the wielder is grappled while the weapon is stuck. While stuck, the weapon can’t be used. A creature can pull the weapon free by taking an action to make a DC 11 Strength check and succeeding.		
+		</p>
+	</property-block>
+</stat-block>
+</body></html>

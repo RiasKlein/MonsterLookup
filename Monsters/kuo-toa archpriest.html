@@ -1,59 +1,6 @@
-################################################################################
-#
-#	genFormatting.py
-#	Generates statblock HTML formatting code for our monster
-#	This program is intended to be used as a subsystem for a monster generator.
-#
-#	Usage: python genFormatting.py [monster name]
-#	
-#	This generator is developed by Shunman Tse (RiasKlein)
-#		https://github.com/riasklein
-#	Statblock5e code is by Val Markovic (Valloric) 
-#		https://github.com/Valloric
-#
-#	Version 0.8
-#
-################################################################################
-
-import sys
-
-# print_usage_instructions
-#	Function prints the usage instructions
-def print_usage_instructions ():
-	print ("Correct Usage:\tpython genFormatting.py [monster name]")
-	
-def genFormatting( monster_name ):
-	if len(sys.argv) < 2:
-		print ("Usage Error: genFormatting.py cannot run properly")
-		print_usage_instructions()
-		sys.exit()
-
-	# According to the usage instructions, the monster name is the second argument
-	#monster_name = sys.argv[1]				# Get the monster name from arguments
-
-	# Convert periods to spaces
-	monster_name = monster_name.replace ('.', ' ')
-
-	# Capitalize the first letter of every word in monster name
-	list = [word[0].upper() + word[1:] for word in monster_name.split()]
-	monster_name = " ".join(list)
-
-	# We will write statblock code into the monster file
-	wfile = open (monster_name.lower() + ".html", 'w')
-
-	############################################################################
-	# Writing the formatting code
-	############################################################################
-	
-	wfile.write(
-"""<!DOCTYPE html>
+<!DOCTYPE html>
 <html><head><link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet" type="text/css"/><link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css"/><meta charset="utf-8"/>
-<title>""")
-
-	wfile.write(monster_name)
-
-	wfile.write(
-"""</title><style>
+<title>Kuo-toa Archpriest</title><style>
       body {
         margin: 0;
       }
@@ -428,9 +375,139 @@ def genFormatting( monster_name ):
   thatDoc.registerElement(elemName, {prototype: proto});
 })(window, document);
 </script>
-""")
 
-	# Close the file now that we are done
-	wfile.close()
+<stat-block>
+	<creature-heading>
+		<h1>Kuo-toa Archpriest</h1>
+		<h2>
+		Medium humanoid (kuo-toa), neutral evil
+		</h2>
+	</creature-heading>
 	
-	return monster_name.lower() + ".html"
+	<top-stats>		
+		<property-line>
+			<h4>Armor Class</h4>
+			<p>
+			13 (natural armor)
+			</p>
+		</property-line>
+			
+		<property-line>
+			<h4>Hit Points</h4>
+			<p>
+			97 (13d8 + 39)
+			</p>
+		</property-line>
+			
+		<property-line>
+			<h4>Speed</h4>
+			<p>
+			30 ft., swim 30 ft.
+			</p>
+		</property-line>
+			
+		<abilities-block data-str="16" data-dex="14" data-con="16" data-int="13" data-wis="16" data-cha="14" ></abilities-block>	
+			
+		<property-line>
+			<h4>Skills</h4>
+			<p>
+			Perception +9, Religion +6
+			</p>
+		</property-line>	
+			
+		<property-line>
+			<h4>Senses</h4>
+			<p>
+			darkvision 120 ft., passive Perception 19
+			</p>
+		</property-line>	
+			
+		<property-line>
+			<h4>Languages</h4>
+			<p>
+			Undercommon
+			</p>
+		</property-line>	
+			
+		<property-line>
+			<h4>Challenge</h4>
+			<p>
+			6 (2,300 XP)
+			</p>
+		</property-line>
+	</top-stats>
+			
+	<property-block>
+		<h4>
+		Amphibious.
+		</h4>
+		<p> The kuo-toa can breathe air and water.
+		</p>
+	</property-block>
+			
+	<property-block>
+		<h4>
+		Otherworldly Perception.
+		</h4>
+		<p> The kuo-toa can sense the presence of any creature within 30 feet of it that is invisible or on the Ethereal Plane. It can pinpoint such a creature that is moving.
+		</p>
+	</property-block>
+			
+	<property-block>
+		<h4>
+		Slippery.
+		</h4>
+		<p> The kuo-toa has advantage on ability checks and saving throws made to escape a grapple.
+		</p>
+	</property-block>
+			
+	<property-block>
+		<h4>
+		Sunlight Sensitivity.
+		</h4>
+		<p> While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+		</p>
+	</property-block>
+			
+	<property-block>
+		<h4>
+		Spellcasting.
+		</h4>
+		<p> The kuo-toa is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with 
+		spell attacks). The kuo-toa has the following cleric spells prepared: 
+		</p> <p> Cantrips (at will): <i>guidance, sacred flame, thaumaturgy </i>
+		</p> <p> 1st level (4 slots): <i>detect magic, sanctuary, shield of faith </i>
+		</p> <p> 2nd level (3 slots): <i>hold person, spiritual weapon </i>
+		</p> <p> 3rd level (3 slots): <i>spirit guardians, tongues </i>
+		</p> <p> 4th level (3 slots): <i>control water, divination </i>
+		</p> <p> 5th level (2 slots): <i>mass cure wounds, scrying</i>
+		</p>
+	</property-block>
+	
+	<h3>Actions</h3>
+			
+	<property-block>
+		<h4>
+		Multiattack.
+		</h4>
+		<p> The kuo-toa makes two melee attacks.		
+		</p>
+	</property-block>
+			
+	<property-block>
+		<h4>
+		Scepter.
+		</h4>
+		<p><i> Melee Weapon Attack:</i> +6 to hit, reach 5 ft., one target.<i> Hit:</i> 6 (1d6 + 3) bludgeoning damage plus 14 (4d6) lightning damage.		
+		</p>
+	</property-block>
+			
+	<property-block>
+		<h4>
+		Unarmed Strike.
+		</h4>
+		<p><i> Melee Weapon Attack:</i> +6 to hit, reach 5 ft., one target.<i> Hit:</i> 4 (1d4 + 2) bludgeoning damage.		
+		</p>
+	</property-block>
+</stat-block>
+</body></html>

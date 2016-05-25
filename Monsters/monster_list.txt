@@ -140,6 +140,12 @@ intellect devourer.html
 invisible stalker.html
 iron golem.html
 jackalwere.html
+kenku.html
+kobold.html
+kraken.html
+kuo-toa archpriest.html
+kuo-toa whip.html
+kuo-toa.html
 lemure.html
 manes.html
 marid.html
@@ -174,6 +180,7 @@ violet fungus.html
 vrock.html
 water elemental.html
 white dragon wyrmling.html
+winged kobold.html
 yochlol.html
 young black dragon.html
 young blue dragon.html
