@@ -78,6 +78,8 @@ drow priestess of lolth.html
 drow.html
 dryad.html
 duergar.html
+duodrone.html
+dust mephit.html
 earth elemental.html
 efreeti.html
 empyrean.html
@@ -135,6 +137,7 @@ hook horror.html
 horned devil.html
 hydra.html
 ice devil.html
+ice mephit.html
 imp.html
 intellect devourer.html
 invisible stalker.html
@@ -152,17 +155,36 @@ lich.html
 lizard king-queen.html
 lizardfolk shaman.html
 lizardfolk.html
+magma mephit.html
+magmin.html
 manes.html
+manticore.html
 marid.html
 marilith.html
+medusa.html
+merfolk.html
+merrow.html
+mimic.html
+mind flayer.html
+minotaur.html
+monodrone.html
 monster_list.txt
+mud mephit.html
+mummy lord.html
+mummy.html
+myconid adult.html
+myconid sovereign.html
+myconid sprout.html
 nalfeshnee.html
 needle blight.html
 night hag.html
+pentadrone.html
 pit fiend.html
 planetar.html
 plesiosaurus.html
 pteranodon.html
+quadrone.html
+quaggoth spore servant.html
 quasit.html
 red dragon wyrmling.html
 rug of smothering.html
@@ -170,14 +192,17 @@ sea hag.html
 shadow demon.html
 shrieker.html
 silver dragon wyrmling.html
+smoke mephit.html
 solar.html
 spectator.html
 spined devil.html
+steam mephit.html
 stone giant.html
 stone golem.html
 storm giant.html
 tiamat.html
 triceratops.html
+tridrone.html
 twig blight.html
 tyrannosaurus rex.html
 vine blight.html
