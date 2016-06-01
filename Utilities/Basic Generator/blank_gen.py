@@ -1,11 +1,11 @@
 ################################################################################
 #
-#	gen.py
+#	blank_gen.py
 #	A barebones D&D Monster Generator using statblock5e 
 #	Only the monster name is filled in, all other monster information must be
 #	inserted into the code manually. 
 #
-#	Usage: python gen.py [monster name]
+#	Usage: python blank_gen.py [monster name]
 #		If there is a space ine the monster name, for example: chain devil
 #		Use a period instead of space. That is: chain.devil 
 #	
@@ -23,7 +23,7 @@ import sys
 # print_usage_instructions
 #	Function prints the usage instructions
 def print_usage_instructions ():
-	print ("Correct Usage:\tpython gen.py [monster name]")
+	print ("Correct Usage:\tpython blank_gen.py [monster name]")
 
 if len(sys.argv) < 2:
 	print ("Usage Error:\tThe program needs a monster name.")
