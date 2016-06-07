@@ -38,6 +38,7 @@ beholder.html
 black dragon wyrmling.html
 blue dragon wyrmling.html
 bone devil.html
+bone naga.html
 brass dragon wyrmling.html
 bronze dragon wyrmling.html
 bugbear chief.html
@@ -122,6 +123,7 @@ grick alpha.html
 grick.html
 griffon.html
 grimlock.html
+guardian naga.html
 half-red dragon veteran.html
 harpy.html
 hell hound.html
@@ -178,6 +180,8 @@ myconid sprout.html
 nalfeshnee.html
 needle blight.html
 night hag.html
+nightmare.html
+nothic.html
 pentadrone.html
 pit fiend.html
 planetar.html
@@ -196,6 +200,7 @@ smoke mephit.html
 solar.html
 spectator.html
 spined devil.html
+spirit naga.html
 steam mephit.html
 stone giant.html
 stone golem.html
