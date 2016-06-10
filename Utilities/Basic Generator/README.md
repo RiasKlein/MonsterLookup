@@ -17,5 +17,5 @@ blank_gen.py requires a monster name to run. Otherwise an error message is print
 
 ## Credit
 
-statblock5e is by Valloric
+statblock5e is by Valloric  
 blank_gen.py is by Shunman Tse
