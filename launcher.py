@@ -1,10 +1,11 @@
-import os
-import sys
-import webbrowser
+import os, sys, webbrowser
+from Modules.listToHTML import listToHTML
 
 # Configurable Global Settings
 file_monster_list = 'monster_list.txt'	# file with the monster HTML file names
-system_version = '0.11'
+html_monster_list_fname = 'monster_list.html'
+html_monster_list_header = "Monster List"
+system_version = '0.12'
 
 # readMonsterList
 #	Function reads the file monster_list.txt for all currently available monsters
@@ -33,9 +34,16 @@ def handleBuiltIn ( user_input ):
 	# If the input was 'help', then provide the available monster list
 	if (user_input.lower() == 'help'):
 		is_builtin = True
+		"""
 		print ("============================\n\tMonster List\n============================")
 		print (monster_list)
 		print ("")
+		print ("System Version: " + system_version)
+		"""
+
+		# Open the HTML file with the monster names
+		webbrowser.open_new_tab (html_monster_list_fname)	
+		
 		print ("System Version: " + system_version)
 	# If the input was an empty string, then do nothing
 	elif (user_input.lower() == ""):
@@ -43,6 +51,10 @@ def handleBuiltIn ( user_input ):
 	# If the input was 'exit', then exit the system
 	elif (user_input.lower() == 'exit'):
 		print ("Exiting...")
+		
+		# Remove the generated monster_list HTML
+		os.remove (html_monster_list_fname)
+		
 		sys.exit()
 		
 	return is_builtin
@@ -68,11 +80,17 @@ def printIntroduction ():
 	print ("Type in a monster name to look for or type in 'help' for more information")
 		
 def main():
+	# Setting the title for the program
+	os.system ("title Dungeons and Dragons 5e Monster Lookup")
+
 	# Change the working directory to the Monsters folder
 	os.chdir ('./Monsters')
 
-	# First, let's get the names of all available monsters
+	# Get the names of all available monsters
 	readMonsterList()
+	
+	# Create an updated HTML file to display all the available monsters
+	listToHTML ( file_monster_list, html_monster_list_fname, html_monster_list_header)
 	
 	# Introduction Information!
 	printIntroduction ()
