@@ -36,6 +36,7 @@ bearded devil.html
 behir.html
 beholder.html
 black dragon wyrmling.html
+black pudding.html
 blue dragon wyrmling.html
 bone devil.html
 bone naga.html
@@ -99,6 +100,7 @@ frost giant.html
 galeb duhr.html
 gargoyle.html
 gas spore.html
+gelantinous cube.html
 ghast.html
 ghost.html
 ghoul.html
@@ -116,6 +118,7 @@ goblin.html
 gold dragon wyrmling.html
 gorgon.html
 goristro.html
+gray ooze.html
 green dragon wyrmling.html
 green hag.html
 grell.html
@@ -124,6 +127,7 @@ grick.html
 griffon.html
 grimlock.html
 guardian naga.html
+half-ogre.html
 half-red dragon veteran.html
 harpy.html
 hell hound.html
@@ -182,6 +186,15 @@ needle blight.html
 night hag.html
 nightmare.html
 nothic.html
+ochre jelly.html
+ogre.html
+oni.html
+orc eye of gruumsh.html
+orc war chief.html
+orc.html
+orog.html
+otyugh.html
+owlbear.html
 pentadrone.html
 pit fiend.html
 planetar.html
