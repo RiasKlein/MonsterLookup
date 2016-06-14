@@ -208,6 +208,7 @@ pteranodon.html
 purple worm.html
 quadrone.html
 quaggoth spore servant.html
+quaggoth.html
 quasit.html
 red dragon wyrmling.html
 rug of smothering.html
