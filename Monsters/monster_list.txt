@@ -195,11 +195,17 @@ orc.html
 orog.html
 otyugh.html
 owlbear.html
+pegasus.html
 pentadrone.html
+peryton.html
+piercer.html
 pit fiend.html
+pixie.html
 planetar.html
 plesiosaurus.html
+pseudodragon.html
 pteranodon.html
+purple worm.html
 quadrone.html
 quaggoth spore servant.html
 quasit.html
