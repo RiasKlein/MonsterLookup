@@ -91,6 +91,7 @@ ettin.html
 faerie dragon.html
 fire elemental.html
 fire giant.html
+fire snake.html
 flameskull.html
 flesh golem.html
 flumph.html
@@ -172,6 +173,7 @@ merfolk.html
 merrow.html
 mimic.html
 mind flayer.html
+minotaur skeleton.html
 minotaur.html
 monodrone.html
 monster_list.txt
@@ -221,10 +223,17 @@ rust monster.html
 sahuagin baron.html
 sahuagin priestess.html
 sahuagin.html
+salamander.html
+satyr.html
+scarecrow.html
 sea hag.html
 shadow demon.html
+shadow.html
+shambling mound.html
+shield guardian.html
 shrieker.html
 silver dragon wyrmling.html
+skeleton.html
 smoke mephit.html
 solar.html
 spectator.html
@@ -242,6 +251,7 @@ tyrannosaurus rex.html
 vine blight.html
 violet fungus.html
 vrock.html
+warhorse skeleton.html
 water elemental.html
 werebear.html
 wereboar.html
