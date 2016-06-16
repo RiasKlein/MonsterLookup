@@ -23,6 +23,7 @@ ancient green dragon.html
 ancient red dragon.html
 ancient silver dragon.html
 ancient white dragon.html
+androsphinx.html
 animated armor.html
 ankheg.html
 ankylosaurus.html
@@ -38,6 +39,7 @@ beholder.html
 black dragon wyrmling.html
 black pudding.html
 blue dragon wyrmling.html
+blue slaad.html
 bone devil.html
 bone naga.html
 brass dragon wyrmling.html
@@ -64,6 +66,7 @@ cyclops.html
 dao.html
 darkmantle.html
 death knight.html
+death slaad.html
 death tyrant.html
 deep gnome (svirfneblin).html
 demilich.html
@@ -91,6 +94,7 @@ ettin.html
 faerie dragon.html
 fire elemental.html
 fire giant.html
+fire snake.html
 flameskull.html
 flesh golem.html
 flumph.html
@@ -119,14 +123,17 @@ gold dragon wyrmling.html
 gorgon.html
 goristro.html
 gray ooze.html
+gray slaad.html
 green dragon wyrmling.html
 green hag.html
+green slaad.html
 grell.html
 grick alpha.html
 grick.html
 griffon.html
 grimlock.html
 guardian naga.html
+gynosphinx.html
 half-ogre.html
 half-red dragon veteran.html
 harpy.html
@@ -172,6 +179,7 @@ merfolk.html
 merrow.html
 mimic.html
 mind flayer.html
+minotaur skeleton.html
 minotaur.html
 monodrone.html
 monster_list.txt
@@ -212,25 +220,41 @@ quaggoth.html
 quasit.html
 rakshasa.html
 red dragon wyrmling.html
+red slaad.html
 remorhaz.html
 revenant.html
 roc.html
 roper.html
 rug of smothering.html
 rust monster.html
+sahuagin baron.html
+sahuagin priestess.html
+sahuagin.html
+salamander.html
+satyr.html
+scarecrow.html
 sea hag.html
 shadow demon.html
+shadow.html
+shambling mound.html
+shield guardian.html
 shrieker.html
 silver dragon wyrmling.html
+skeleton.html
+slaad tadpole.html
 smoke mephit.html
 solar.html
 spectator.html
+specter.html
 spined devil.html
 spirit naga.html
+sprite.html
 steam mephit.html
+stirge.html
 stone giant.html
 stone golem.html
 storm giant.html
+succubus-incubus.html
 tiamat.html
 triceratops.html
 tridrone.html
@@ -239,6 +263,7 @@ tyrannosaurus rex.html
 vine blight.html
 violet fungus.html
 vrock.html
+warhorse skeleton.html
 water elemental.html
 werebear.html
 wereboar.html

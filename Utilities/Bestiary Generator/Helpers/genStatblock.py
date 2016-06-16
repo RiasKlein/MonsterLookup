@@ -11,7 +11,7 @@
 #	Statblock5e code is by Val Markovic (Valloric) 
 #		https://github.com/Valloric
 #
-#	Version 0.9
+#	Version 0.91
 #
 ################################################################################
 
@@ -320,12 +320,12 @@ def writeActions (rfile, wfile):
 
 			for i in range ( 1, len(line)):
 				if line[i] != '\n' and line[i] != ' \n':
-					if ':' in line[i]:
-						italics = line[i].split(':', 1)
-						wfile.write ( '<i>' )
-						wfile.write (italics[0] + ':')
-						wfile.write ( '</i>' )
-						wfile.write (italics[1] + '.')
+					if ':' in line[i] and line[0] != 'Multiattack':		# Make sure that the ability isn't multiattack
+						italics = line[i].split(':', 1)					# Use ':' as condition to apply italics
+						wfile.write ( '<i>' )							# Add start tag for HTML italics
+						wfile.write (italics[0] + ':')					# Include the : that we removed before
+						wfile.write ( '</i>' )							# Add end tag for HTML italics
+						wfile.write (italics[1] + '.')					# Add in the '.' that we removed before
 					else:
 						wfile.write (line[i] + '.')
 			
