@@ -38,6 +38,7 @@ beholder.html
 black dragon wyrmling.html
 black pudding.html
 blue dragon wyrmling.html
+blue slaad.html
 bone devil.html
 bone naga.html
 brass dragon wyrmling.html
@@ -64,6 +65,7 @@ cyclops.html
 dao.html
 darkmantle.html
 death knight.html
+death slaad.html
 death tyrant.html
 deep gnome (svirfneblin).html
 demilich.html
@@ -120,8 +122,10 @@ gold dragon wyrmling.html
 gorgon.html
 goristro.html
 gray ooze.html
+gray slaad.html
 green dragon wyrmling.html
 green hag.html
+green slaad.html
 grell.html
 grick alpha.html
 grick.html
@@ -214,6 +218,7 @@ quaggoth.html
 quasit.html
 rakshasa.html
 red dragon wyrmling.html
+red slaad.html
 remorhaz.html
 revenant.html
 roc.html
@@ -234,6 +239,7 @@ shield guardian.html
 shrieker.html
 silver dragon wyrmling.html
 skeleton.html
+slaad tadpole.html
 smoke mephit.html
 solar.html
 spectator.html
