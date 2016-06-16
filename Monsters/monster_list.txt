@@ -210,8 +210,14 @@ quadrone.html
 quaggoth spore servant.html
 quaggoth.html
 quasit.html
+rakshasa.html
 red dragon wyrmling.html
+remorhaz.html
+revenant.html
+roc.html
+roper.html
 rug of smothering.html
+rust monster.html
 sea hag.html
 shadow demon.html
 shrieker.html
@@ -251,5 +257,6 @@ young gold dragon.html
 young green dragon.html
 young red dragon.html
 young red shadow dragon.html
+young remorhaz.html
 young silver dragon.html
 young white dragon.html
