@@ -218,6 +218,9 @@ roc.html
 roper.html
 rug of smothering.html
 rust monster.html
+sahuagin baron.html
+sahuagin priestess.html
+sahuagin.html
 sea hag.html
 shadow demon.html
 shrieker.html
