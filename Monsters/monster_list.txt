@@ -23,6 +23,7 @@ ancient green dragon.html
 ancient red dragon.html
 ancient silver dragon.html
 ancient white dragon.html
+androsphinx.html
 animated armor.html
 ankheg.html
 ankylosaurus.html
@@ -132,6 +133,7 @@ grick.html
 griffon.html
 grimlock.html
 guardian naga.html
+gynosphinx.html
 half-ogre.html
 half-red dragon veteran.html
 harpy.html
@@ -243,12 +245,16 @@ slaad tadpole.html
 smoke mephit.html
 solar.html
 spectator.html
+specter.html
 spined devil.html
 spirit naga.html
+sprite.html
 steam mephit.html
+stirge.html
 stone giant.html
 stone golem.html
 storm giant.html
+succubus-incubus.html
 tiamat.html
 triceratops.html
 tridrone.html
