@@ -28,6 +28,7 @@ androsphinx.html
 animated armor.html
 ankheg.html
 ankylosaurus.html
+arcanaloth.html
 azer.html
 balor.html
 banshee.html
@@ -178,6 +179,7 @@ marilith.html
 medusa.html
 merfolk.html
 merrow.html
+mezzoloth.html
 mimic.html
 mind flayer.html
 minotaur skeleton.html
@@ -195,6 +197,7 @@ needle blight.html
 night hag.html
 nightmare.html
 nothic.html
+nycaloth.html
 ochre jelly.html
 ogre.html
 oni.html
@@ -266,6 +269,7 @@ troglodyte.html
 troll.html
 twig blight.html
 tyrannosaurus rex.html
+ultroloth.html
 umber hulk.html
 unicorn.html
 vampire spawn.html
