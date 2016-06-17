@@ -93,9 +93,11 @@ deep gnome (svirfneblin).html
 deer.html
 demilich.html
 deva.html
+dire wolf.html
 displacer beast.html
 djinni.html
 doppelganger.html
+draft horse.html
 dragon turtle.html
 dretch.html
 drider.html
@@ -107,8 +109,11 @@ dryad.html
 duergar.html
 duodrone.html
 dust mephit.html
+eagle.html
 earth elemental.html
 efreeti.html
+elephant.html
+elk.html
 empyrean.html
 erinyes.html
 ettercap.html
@@ -120,8 +125,10 @@ fire snake.html
 flameskull.html
 flesh golem.html
 flumph.html
+flying snake.html
 flying sword.html
 fomorian.html
+frog.html
 frost giant.html
 galeb duhr.html
 gargoyle.html
