@@ -267,6 +267,8 @@ twig blight.html
 tyrannosaurus rex.html
 umber hulk.html
 unicorn.html
+vampire spawn.html
+vampire.html
 vine blight.html
 violet fungus.html
 vrock.html
