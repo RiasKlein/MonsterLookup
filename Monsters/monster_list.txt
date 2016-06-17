@@ -286,6 +286,7 @@ will-o'-wisp.html
 winged kobold.html
 wraith.html
 wyvern.html
+xorn.html
 yochlol.html
 young black dragon.html
 young blue dragon.html
