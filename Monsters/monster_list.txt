@@ -274,13 +274,18 @@ violet fungus.html
 vrock.html
 warhorse skeleton.html
 water elemental.html
+water weird.html
 werebear.html
 wereboar.html
 wererat.html
 weretiger.html
 werewolf.html
 white dragon wyrmling.html
+wight.html
+will-o'-wisp.html
 winged kobold.html
+wraith.html
+wyvern.html
 yochlol.html
 young black dragon.html
 young blue dragon.html
