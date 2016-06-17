@@ -1,5 +1,6 @@
 aarakocra.html
 aboleth.html
+abominable yeti.html
 adult black dragon.html
 adult blue dracolich.html
 adult blue dragon.html
@@ -27,6 +28,7 @@ androsphinx.html
 animated armor.html
 ankheg.html
 ankylosaurus.html
+arcanaloth.html
 azer.html
 balor.html
 banshee.html
@@ -177,6 +179,7 @@ marilith.html
 medusa.html
 merfolk.html
 merrow.html
+mezzoloth.html
 mimic.html
 mind flayer.html
 minotaur skeleton.html
@@ -194,6 +197,7 @@ needle blight.html
 night hag.html
 nightmare.html
 nothic.html
+nycaloth.html
 ochre jelly.html
 ogre.html
 oni.html
@@ -265,6 +269,7 @@ troglodyte.html
 troll.html
 twig blight.html
 tyrannosaurus rex.html
+ultroloth.html
 umber hulk.html
 unicorn.html
 vampire spawn.html
@@ -287,6 +292,7 @@ winged kobold.html
 wraith.html
 wyvern.html
 xorn.html
+yeti.html
 yochlol.html
 young black dragon.html
 young blue dragon.html
@@ -300,3 +306,6 @@ young red shadow dragon.html
 young remorhaz.html
 young silver dragon.html
 young white dragon.html
+yuan-ti abomination.html
+yuan-ti malison.html
+yuan-ti pureblood.html
