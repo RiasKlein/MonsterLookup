@@ -255,9 +255,14 @@ stone giant.html
 stone golem.html
 storm giant.html
 succubus-incubus.html
+tarrasque.html
+thri-kreen.html
 tiamat.html
+treant.html
 triceratops.html
 tridrone.html
+troglodyte.html
+troll.html
 twig blight.html
 tyrannosaurus rex.html
 vine blight.html
