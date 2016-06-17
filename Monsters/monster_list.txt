@@ -1,5 +1,6 @@
 aarakocra.html
 aboleth.html
+abominable yeti.html
 adult black dragon.html
 adult blue dracolich.html
 adult blue dragon.html
@@ -287,6 +288,7 @@ winged kobold.html
 wraith.html
 wyvern.html
 xorn.html
+yeti.html
 yochlol.html
 young black dragon.html
 young blue dragon.html
@@ -300,3 +302,6 @@ young red shadow dragon.html
 young remorhaz.html
 young silver dragon.html
 young white dragon.html
+yuan-ti abomination.html
+yuan-ti malison.html
+yuan-ti pureblood.html
