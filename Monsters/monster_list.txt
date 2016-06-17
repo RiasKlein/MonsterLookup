@@ -37,6 +37,7 @@ barlgura.html
 basilisk.html
 bearded devil.html
 behir.html
+beholder zombie.html
 beholder.html
 black dragon wyrmling.html
 black pudding.html
@@ -199,6 +200,7 @@ nightmare.html
 nothic.html
 nycaloth.html
 ochre jelly.html
+ogre zombie.html
 ogre.html
 oni.html
 orc eye of gruumsh.html
@@ -309,3 +311,4 @@ young white dragon.html
 yuan-ti abomination.html
 yuan-ti malison.html
 yuan-ti pureblood.html
+zombie.html
