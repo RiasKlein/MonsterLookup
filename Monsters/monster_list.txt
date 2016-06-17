@@ -28,31 +28,45 @@ androsphinx.html
 animated armor.html
 ankheg.html
 ankylosaurus.html
+ape.html
 arcanaloth.html
+awakened shrub.html
+awakened tree.html
+axe beak.html
 azer.html
+baboon.html
+badger.html
 balor.html
 banshee.html
 barbed devil.html
 barlgura.html
 basilisk.html
+bat.html
 bearded devil.html
 behir.html
 beholder zombie.html
 beholder.html
+black bear.html
 black dragon wyrmling.html
 black pudding.html
+blink dog.html
+blood hawk.html
 blue dragon wyrmling.html
 blue slaad.html
+boar.html
 bone devil.html
 bone naga.html
 brass dragon wyrmling.html
 bronze dragon wyrmling.html
+brown bear.html
 bugbear chief.html
 bugbear.html
 bulette.html
 bullywug.html
 cambion.html
+camel.html
 carrion crawler.html
+cat.html
 centaur.html
 chain devil.html
 chasme.html
@@ -62,16 +76,21 @@ clay golem.html
 cloaker.html
 cloud giant.html
 cockatrice.html
+constrictor snake.html
 copper dragon wyrmling.html
 couatl.html
+crab.html
 crawling claw.html
+crocodile.html
 cyclops.html
 dao.html
 darkmantle.html
+death dog.html
 death knight.html
 death slaad.html
 death tyrant.html
 deep gnome (svirfneblin).html
+deer.html
 demilich.html
 deva.html
 displacer beast.html
