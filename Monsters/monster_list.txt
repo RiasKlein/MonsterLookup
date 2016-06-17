@@ -265,6 +265,8 @@ troglodyte.html
 troll.html
 twig blight.html
 tyrannosaurus rex.html
+umber hulk.html
+unicorn.html
 vine blight.html
 violet fungus.html
 vrock.html
