@@ -137,6 +137,34 @@ gelantinous cube.html
 ghast.html
 ghost.html
 ghoul.html
+giant ape.html
+giant badger.html
+giant bat.html
+giant boar.html
+giant centipede.html
+giant constrictor snake.html
+giant crab.html
+giant crocodile.html
+giant eagle.html
+giant elk.html
+giant fire beetle.html
+giant frog.html
+giant goat.html
+giant hyena.html
+giant lizard.html
+giant octopus.html
+giant owl.html
+giant poisonous snake.html
+giant rat.html
+giant scorpion.html
+giant sea horse.html
+giant shark.html
+giant spider.html
+giant toad.html
+giant vulture.html
+giant wasp.html
+giant weasel.html
+giant wolf spider.html
 gibbering mouther.html
 githyanki knight.html
 githyanki monk.html
