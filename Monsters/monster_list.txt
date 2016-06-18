@@ -352,6 +352,7 @@ swarm of ravens.html
 tarrasque.html
 thri-kreen.html
 tiamat.html
+tiger.html
 treant.html
 triceratops.html
 tridrone.html
@@ -367,9 +368,12 @@ vampire.html
 vine blight.html
 violet fungus.html
 vrock.html
+vulture.html
 warhorse skeleton.html
+warhorse.html
 water elemental.html
 water weird.html
+weasel.html
 werebear.html
 wereboar.html
 wererat.html
@@ -379,6 +383,9 @@ white dragon wyrmling.html
 wight.html
 will-o'-wisp.html
 winged kobold.html
+winter wolf.html
+wolf.html
+worg.html
 wraith.html
 wyvern.html
 xorn.html
