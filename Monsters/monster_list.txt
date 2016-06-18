@@ -1,6 +1,7 @@
 aarakocra.html
 aboleth.html
 abominable yeti.html
+acolyte.html
 adult black dragon.html
 adult blue dracolich.html
 adult blue dragon.html
@@ -30,6 +31,8 @@ ankheg.html
 ankylosaurus.html
 ape.html
 arcanaloth.html
+archmage.html
+assassin.html
 awakened shrub.html
 awakened tree.html
 axe beak.html
@@ -37,6 +40,8 @@ azer.html
 baboon.html
 badger.html
 balor.html
+bandit captain.html
+bandit.html
 banshee.html
 barbed devil.html
 barlgura.html
@@ -46,6 +51,7 @@ bearded devil.html
 behir.html
 beholder zombie.html
 beholder.html
+berserker.html
 black bear.html
 black dragon wyrmling.html
 black pudding.html
@@ -76,12 +82,15 @@ clay golem.html
 cloaker.html
 cloud giant.html
 cockatrice.html
+commoner.html
 constrictor snake.html
 copper dragon wyrmling.html
 couatl.html
 crab.html
 crawling claw.html
 crocodile.html
+cult fanatic.html
+cultist.html
 cyclops.html
 dao.html
 darkmantle.html
@@ -105,6 +114,7 @@ drow elite warrior.html
 drow mage.html
 drow priestess of lolth.html
 drow.html
+druid.html
 dryad.html
 duergar.html
 duodrone.html
@@ -171,6 +181,7 @@ githyanki monk.html
 githyanki warrior.html
 githyanki zerth.html
 glabrezu.html
+gladiator.html
 gnoll fang of yeenoghu.html
 gnoll pack lord.html
 gnoll.html
@@ -190,6 +201,7 @@ grick alpha.html
 grick.html
 griffon.html
 grimlock.html
+guard.html
 guardian naga.html
 gynosphinx.html
 half-ogre.html
@@ -220,6 +232,7 @@ jackal.html
 jackalwere.html
 kenku.html
 killer whale.html
+knight.html
 kobold.html
 kraken.html
 kuo-toa archpriest.html
@@ -233,6 +246,7 @@ lizard king-queen.html
 lizard.html
 lizardfolk shaman.html
 lizardfolk.html
+mage.html
 magma mephit.html
 magmin.html
 mammoth.html
