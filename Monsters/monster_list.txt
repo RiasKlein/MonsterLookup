@@ -28,31 +28,45 @@ androsphinx.html
 animated armor.html
 ankheg.html
 ankylosaurus.html
+ape.html
 arcanaloth.html
+awakened shrub.html
+awakened tree.html
+axe beak.html
 azer.html
+baboon.html
+badger.html
 balor.html
 banshee.html
 barbed devil.html
 barlgura.html
 basilisk.html
+bat.html
 bearded devil.html
 behir.html
 beholder zombie.html
 beholder.html
+black bear.html
 black dragon wyrmling.html
 black pudding.html
+blink dog.html
+blood hawk.html
 blue dragon wyrmling.html
 blue slaad.html
+boar.html
 bone devil.html
 bone naga.html
 brass dragon wyrmling.html
 bronze dragon wyrmling.html
+brown bear.html
 bugbear chief.html
 bugbear.html
 bulette.html
 bullywug.html
 cambion.html
+camel.html
 carrion crawler.html
+cat.html
 centaur.html
 chain devil.html
 chasme.html
@@ -62,21 +76,28 @@ clay golem.html
 cloaker.html
 cloud giant.html
 cockatrice.html
+constrictor snake.html
 copper dragon wyrmling.html
 couatl.html
+crab.html
 crawling claw.html
+crocodile.html
 cyclops.html
 dao.html
 darkmantle.html
+death dog.html
 death knight.html
 death slaad.html
 death tyrant.html
 deep gnome (svirfneblin).html
+deer.html
 demilich.html
 deva.html
+dire wolf.html
 displacer beast.html
 djinni.html
 doppelganger.html
+draft horse.html
 dragon turtle.html
 dretch.html
 drider.html
@@ -88,8 +109,11 @@ dryad.html
 duergar.html
 duodrone.html
 dust mephit.html
+eagle.html
 earth elemental.html
 efreeti.html
+elephant.html
+elk.html
 empyrean.html
 erinyes.html
 ettercap.html
@@ -101,8 +125,10 @@ fire snake.html
 flameskull.html
 flesh golem.html
 flumph.html
+flying snake.html
 flying sword.html
 fomorian.html
+frog.html
 frost giant.html
 galeb duhr.html
 gargoyle.html
@@ -111,6 +137,34 @@ gelantinous cube.html
 ghast.html
 ghost.html
 ghoul.html
+giant ape.html
+giant badger.html
+giant bat.html
+giant boar.html
+giant centipede.html
+giant constrictor snake.html
+giant crab.html
+giant crocodile.html
+giant eagle.html
+giant elk.html
+giant fire beetle.html
+giant frog.html
+giant goat.html
+giant hyena.html
+giant lizard.html
+giant octopus.html
+giant owl.html
+giant poisonous snake.html
+giant rat.html
+giant scorpion.html
+giant sea horse.html
+giant shark.html
+giant spider.html
+giant toad.html
+giant vulture.html
+giant wasp.html
+giant weasel.html
+giant wolf spider.html
 gibbering mouther.html
 githyanki knight.html
 githyanki monk.html
@@ -120,6 +174,7 @@ glabrezu.html
 gnoll fang of yeenoghu.html
 gnoll pack lord.html
 gnoll.html
+goat.html
 goblin boss.html
 goblin.html
 gold dragon wyrmling.html
@@ -140,6 +195,7 @@ gynosphinx.html
 half-ogre.html
 half-red dragon veteran.html
 harpy.html
+hawk.html
 hell hound.html
 helmed horror.html
 hezrou.html
@@ -151,15 +207,19 @@ hobgoblin.html
 homunculus.html
 hook horror.html
 horned devil.html
+hunter shark.html
 hydra.html
+hyena.html
 ice devil.html
 ice mephit.html
 imp.html
 intellect devourer.html
 invisible stalker.html
 iron golem.html
+jackal.html
 jackalwere.html
 kenku.html
+killer whale.html
 kobold.html
 kraken.html
 kuo-toa archpriest.html
@@ -168,15 +228,19 @@ kuo-toa.html
 lamia.html
 lemure.html
 lich.html
+lion.html
 lizard king-queen.html
+lizard.html
 lizardfolk shaman.html
 lizardfolk.html
 magma mephit.html
 magmin.html
+mammoth.html
 manes.html
 manticore.html
 marid.html
 marilith.html
+mastiff.html
 medusa.html
 merfolk.html
 merrow.html
@@ -188,6 +252,7 @@ minotaur.html
 monodrone.html
 monster_list.txt
 mud mephit.html
+mule.html
 mummy lord.html
 mummy.html
 myconid adult.html
@@ -200,6 +265,7 @@ nightmare.html
 nothic.html
 nycaloth.html
 ochre jelly.html
+octopus.html
 ogre zombie.html
 ogre.html
 oni.html
@@ -208,15 +274,21 @@ orc war chief.html
 orc.html
 orog.html
 otyugh.html
+owl.html
 owlbear.html
+panther.html
 pegasus.html
 pentadrone.html
 peryton.html
+phase spider.html
 piercer.html
 pit fiend.html
 pixie.html
 planetar.html
 plesiosaurus.html
+poisonous snake.html
+polar bear.html
+pony.html
 pseudodragon.html
 pteranodon.html
 purple worm.html
@@ -224,22 +296,31 @@ quadrone.html
 quaggoth spore servant.html
 quaggoth.html
 quasit.html
+quipper.html
 rakshasa.html
+rat.html
+raven.html
 red dragon wyrmling.html
 red slaad.html
+reef shark.html
 remorhaz.html
 revenant.html
+rhinoceros.html
+riding horse.html
 roc.html
 roper.html
 rug of smothering.html
 rust monster.html
+saber-toothed tiger.html
 sahuagin baron.html
 sahuagin priestess.html
 sahuagin.html
 salamander.html
 satyr.html
 scarecrow.html
+scorpion.html
 sea hag.html
+sea horse.html
 shadow demon.html
 shadow.html
 shambling mound.html
@@ -252,6 +333,7 @@ smoke mephit.html
 solar.html
 spectator.html
 specter.html
+spider.html
 spined devil.html
 spirit naga.html
 sprite.html
@@ -261,9 +343,16 @@ stone giant.html
 stone golem.html
 storm giant.html
 succubus-incubus.html
+swarm of bats.html
+swarm of insects.html
+swarm of poisonous snakes.html
+swarm of quippers.html
+swarm of rats.html
+swarm of ravens.html
 tarrasque.html
 thri-kreen.html
 tiamat.html
+tiger.html
 treant.html
 triceratops.html
 tridrone.html
@@ -279,9 +368,12 @@ vampire.html
 vine blight.html
 violet fungus.html
 vrock.html
+vulture.html
 warhorse skeleton.html
+warhorse.html
 water elemental.html
 water weird.html
+weasel.html
 werebear.html
 wereboar.html
 wererat.html
@@ -291,6 +383,9 @@ white dragon wyrmling.html
 wight.html
 will-o'-wisp.html
 winged kobold.html
+winter wolf.html
+wolf.html
+worg.html
 wraith.html
 wyvern.html
 xorn.html
