@@ -276,6 +276,7 @@ nalfeshnee.html
 needle blight.html
 night hag.html
 nightmare.html
+noble.html
 nothic.html
 nycaloth.html
 ochre jelly.html
@@ -303,6 +304,7 @@ plesiosaurus.html
 poisonous snake.html
 polar bear.html
 pony.html
+priest.html
 pseudodragon.html
 pteranodon.html
 purple worm.html
@@ -333,6 +335,7 @@ salamander.html
 satyr.html
 scarecrow.html
 scorpion.html
+scout.html
 sea hag.html
 sea horse.html
 shadow demon.html
@@ -351,6 +354,7 @@ spider.html
 spined devil.html
 spirit naga.html
 sprite.html
+spy.html
 steam mephit.html
 stirge.html
 stone giant.html
@@ -365,9 +369,11 @@ swarm of rats.html
 swarm of ravens.html
 tarrasque.html
 thri-kreen.html
+thug.html
 tiamat.html
 tiger.html
 treant.html
+tribal warrior.html
 triceratops.html
 tridrone.html
 troglodyte.html
@@ -379,6 +385,7 @@ umber hulk.html
 unicorn.html
 vampire spawn.html
 vampire.html
+veteran.html
 vine blight.html
 violet fungus.html
 vrock.html
