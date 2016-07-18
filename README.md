@@ -4,10 +4,10 @@ This system provides dungeon masters with easy access to monster information; it
 ## Using the System
 
 * To start up the system, just double click on launcher.py or use the command **python launcher.py**
+* Just type in the name of the monster you are looking for and hit enter for the corresponding browser page to open up.
 * The built-in commands for the system are: 'help' and 'exit'
   - help: prints out the version number of the system and a list of all available monster names 
   - exit: exits the system
-* Just type in the name of the monster you are looking for and hit enter for the corresponding browser page to open up.
 
 ## Requirements
 * Certain functionalities are only provided in Google Chrome. Make sure that Google Chrome is your default browser.
@@ -25,5 +25,5 @@ This system provides dungeon masters with easy access to monster information; it
 
 ## The Future of the System
 
-* More monster entries will be included over time.
-* Basic generator utilities are now available to assist in the monster creation process. 
+* Support for easy management of custom characters. 
+* More monster statblocks from the various D&D 5e modules.
