@@ -1,2 +1,4 @@
+belia.html
+ellausm.html
 erwen.html
 monster_list.txt
