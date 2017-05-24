@@ -103,6 +103,7 @@ deer.html
 demilich.html
 deva.html
 dire wolf.html
+diseased giant rat.html
 displacer beast.html
 djinni.html
 doppelganger.html
